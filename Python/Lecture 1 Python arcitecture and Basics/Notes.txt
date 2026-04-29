@@ -1,0 +1,18 @@
+Installation of python
+
+1.Download Python package from Official website
+2.for windows - .exe file
+for Mac- .dmg file
+for Linux - .pkg file
+3. Verify is it installed or not by python --version on CMD
+
+
+Python can Executed all types of programming
+
+1.procedural programming : line by line execution
+2.functional programming.: Execution with the help of functional
+3.Object Oriented programming : When you define everything in the form of classes and Object
+
+Define block:
+    Python used indentation(:) or space  to define the block
+    1 Tab = 4 white spaces
