@@ -77,4 +77,5 @@ time_count(n,delay=1)
 """
 range(sec,-1,-1): from sec to 0
 range(sec,0,-1): from sec to 1
+range(sec,1,-1): from sec to 2
 """
