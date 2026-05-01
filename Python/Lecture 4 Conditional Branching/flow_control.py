@@ -27,17 +27,47 @@ syntactically required but no action required
 #     print(x)
 
 
+
+
 #! WAP to identify prime number from a list of number
-import math
+# import math
 
-def is_prime(n):
-    if n<=1:
-        print("Not a prime number")
-    for i in range(2,int(math.sqrt(n))+1):
-        if n%i==0:
-            return False
-    return True
-list=[2,3,5,7,9,11,13,15,17,19,20]
-prime_num=[num for num in list if is_prime(num)]
+# def is_prime(n):
+#     if n<=1:
+#         print("Not a prime number")
+#     for i in range(2,int(math.sqrt(n))+1):
+#         if n%i==0:
+#             return False
+#     return True
+# list=[2,3,5,7,9,11,13,15,17,19,20]
+# prime_num=[num for num in list if is_prime(num)]
 
-print("Prime Number list:",prime_num)
+# print("Prime Number list:",prime_num)
+
+# ! WAP to build timer application with a countdown feature.
+"""
+Execute a block of code which runs after every sec
+"""
+
+# ?Series countdown 
+# import time
+# def time_count(sec,delay=1):
+#     for i in range(1,sec+1):
+#         print("Count down is:",i)
+#         time.sleep(delay)
+#     print("Counter is finished")
+
+
+# time_count(5,delay=1)  #delay will 1 sec
+# time_count(5,delay=2)   #delay will 2 sec
+# time_count(5)           # delay will by default 1
+
+# ? reverse Countdown
+import time
+def time_count(sec,delay=1):
+    for i in range(sec,0,-1): # Reverse order
+        print("Count down is:",i)
+        time.sleep(delay)
+    print("Counter is finished")
+
+time_count(5,delay=1)
