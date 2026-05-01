@@ -63,19 +63,25 @@ Execute a block of code which runs after every sec
 # time_count(5)           # delay will by default 1
 
 # ? reverse Countdown
-import time
-def time_count(sec,delay=1):
-    for i in range(sec,-1,-1): # Reverse order
-        print("Count down is:",i)
-        time.sleep(delay)
-    print("Happy New Year")
+# import time
+# def time_count(sec,delay=1):
+#     for i in range(sec,-1,-1): # Reverse order
+#         print("Count down is:",i)
+#         time.sleep(delay)
+#     print("Happy New Year")
 
 
-n=int(input("Enter Time to countdown:"))
-time_count(n,delay=1)
+# n=int(input("Enter Time to countdown:"))
+# time_count(n,delay=1)
 
 """
 range(sec,-1,-1): from sec to 0
 range(sec,0,-1): from sec to 1
 range(sec,1,-1): from sec to 2
 """
+
+#! WAP To print each character of your name
+# name="Divya"
+# for i in name:
+#     print(i)
+
