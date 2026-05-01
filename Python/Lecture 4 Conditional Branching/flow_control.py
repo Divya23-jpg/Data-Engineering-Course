@@ -65,9 +65,16 @@ Execute a block of code which runs after every sec
 # ? reverse Countdown
 import time
 def time_count(sec,delay=1):
-    for i in range(sec,0,-1): # Reverse order
+    for i in range(sec,-1,-1): # Reverse order
         print("Count down is:",i)
         time.sleep(delay)
-    print("Counter is finished")
+    print("Happy New Year")
 
-time_count(5,delay=1)
+
+n=int(input("Enter Time to countdown:"))
+time_count(n,delay=1)
+
+"""
+range(sec,-1,-1): from sec to 0
+range(sec,0,-1): from sec to 1
+"""
