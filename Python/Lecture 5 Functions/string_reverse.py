@@ -4,7 +4,8 @@ str="Divya"
 """
 
 def rev(str):
-    for i in  str:
-        print(i)
+    return str[::-1]
 
 print(rev("Divya"))
+
+
