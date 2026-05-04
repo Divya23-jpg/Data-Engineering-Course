@@ -22,8 +22,8 @@ def cal_up_lo(str):
         else:
             upper=upper+1
 
-    print("Upper Case count is:",upper)
-    print("Lower Case count is:",lower)
+    # print("Upper Case count is:",upper)
+    # print("Lower Case count is:",lower)
 
 # cal_up_lo("Hyy")
 
@@ -51,5 +51,17 @@ for i in sentence:
     elif i.islower():
         counts['lower']+=1
 
-print("Upper case:",counts['upper'])
-print("Lower case:",counts['lower'])
+# print("Upper case:",counts['upper'])
+# print("Lower case:",counts['lower'])
+
+
+# ! WAF To convert Keys (dictionery) to upper
+def con_key():
+    dict={
+    'a':1,
+    'b':2
+    }
+    new_dict={k.upper():v for k,vin dict.item()}
+
+con_key()
+
