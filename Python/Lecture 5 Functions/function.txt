@@ -22,4 +22,10 @@ Scope of Variable
 1. Local: Defined inside a function and only accessible in afunction
 2. Global: Defined outside function and accessible throuout the entire script
 
+Buit in function:
+1. print()
+2. bin(): binary form of any number with prefix
+3.type()
+4.range()
+5.pow()
 
