@@ -9,7 +9,7 @@ Docstring:
 Types of Functions:
 1. built in function: alaways available in python . Ex: print()
 2. custom/ Defined function: Custom function created by programmers to solve specific problem
-3. lamda function: small,anonymous , one line function defined with help of lambda keyword
+3. lamda function: small,anonymous , one line function defined with help of lambda keyword, No need to define function name
 4. Recursive function: functions that call itself to solve problem like factorial
 
 Argument Types:

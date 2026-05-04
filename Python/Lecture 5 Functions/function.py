@@ -39,4 +39,11 @@ def nameage(name,age):
     print("Hy , I am" , name)
     print("Hi , My age is " , age)
 
-nameage("Divya",22)
+# nameage("Divya",22)
+
+# ! lambda Function
+lambda_var=lambda x: x*x*x
+print(lambda_var(3))
+
+# ! Recursion Function
+
