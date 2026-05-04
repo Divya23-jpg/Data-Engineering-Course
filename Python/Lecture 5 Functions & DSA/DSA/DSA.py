@@ -1,5 +1,7 @@
 """
-List:
+List:Built-in dynamic array which can store elements of different Data types.
+
+
 
 string:
 
