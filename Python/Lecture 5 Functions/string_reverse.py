@@ -25,7 +25,7 @@ def cal_up_lo(str):
     print("Upper Case count is:",upper)
     print("Lower Case count is:",lower)
 
-cal_up_lo("Hyy")
+# cal_up_lo("Hyy")
 
 # str = "Hello World"
 # upperCase = 0
@@ -41,3 +41,15 @@ cal_up_lo("Hyy")
 # checkChar(str)
 # print(f"UpperCase characters: {upperCase}")
 # print(f"LowerCase characters: {lowerCase}")
+
+# ? using Dictionery
+sentence="The quick Brown Fpx Jums over the Lazy Dog"
+counts={'upper':0,'lower':0}
+for i in sentence:
+    if i.isupper():
+        counts['upper']+=1
+    elif i.islower():
+        counts['lower']+=1
+
+print("Upper case:",counts['upper'])
+print("Lower case:",counts['lower'])
