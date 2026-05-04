@@ -1,21 +1,3 @@
-"""
-str="Divya"
-output:ayviD
-
-
-"""
-# Using String Slicing
-def rev(str):
-    return str[::-1]
-
-print(rev("Divya"))
-
-
-
-
-
-
-
 
 # ! WAF To convert Keys (dictionery) to upper
 def con_key():
@@ -28,6 +10,7 @@ def con_key():
 
 # con_key()
 
+# ! WAF To convert Keys (dictionery) to upper even dictionery in dictionery
 def keys_upper(test_dict):
     # return {k.upper(): keys_upper() if isinstance (v ,dict) else v for k,v in test_dict.items()}
     return {k.upper(): keys_upper(v) if isinstance(v, dict) else v for k, v in test_dict.items()}
