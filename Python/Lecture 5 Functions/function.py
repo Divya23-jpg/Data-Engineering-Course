@@ -43,7 +43,16 @@ def nameage(name,age):
 
 # ! lambda Function
 lambda_var=lambda x: x*x*x
-print(lambda_var(3))
+# print(lambda_var(3))
 
 # ! Recursion Function
+# ? calculate Factorial
+# n*(n-1)*(n-1)
 
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+
+print(factorial(5))
