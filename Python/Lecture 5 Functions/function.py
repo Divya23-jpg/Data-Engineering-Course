@@ -17,4 +17,12 @@ def evenodd(x):
     else:
         return "Odd"
     
-print(evenodd(10))
+# print(evenodd(10))
+
+# ?Default argument Example
+def myfunc(x,y=30):
+    print("X:",x)
+    print("Y:",y)
+
+print(myfunc(50))
+print(myfunc(50,100))
