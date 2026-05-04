@@ -11,6 +11,7 @@ Types of Functions:
 2. custom/ Defined function: Custom function created by programmers to solve specific problem
 3. lamda function: small,anonymous , one line function defined with help of lambda keyword, No need to define function name
 4. Recursive function: functions that call itself to solve problem like factorial
+    Mostlu used in Divide and conquer problem and mathematical 
 
 Argument Types:
 1. positional Argument: Arguments must be passed in the correct order
