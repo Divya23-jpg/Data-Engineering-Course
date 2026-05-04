@@ -1,5 +1,7 @@
 """
 str="Divya"
+output:ayviD
+
 
 """
 
