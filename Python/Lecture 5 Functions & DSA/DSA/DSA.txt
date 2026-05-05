@@ -50,3 +50,4 @@ List            O(1)            O(n)            O(n)
 
 Dict/set        NA              O(1)            O(n)
 
+Queue           O(n)            O(n)
