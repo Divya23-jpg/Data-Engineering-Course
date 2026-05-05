@@ -69,9 +69,29 @@
 
 # ! Remove  all element in a set
 
-s=set([0,1,2,3,4,5])
-for i in range(len(s)):
-    s.remove(i)
+# s=set([0,1,2,3,4,5])
+# for i in range(len(s)):
+#     s.remove(i)
+# print(s)
 
-print(s)
+"""Methods of set:
+1.max(set)
+min(set)
+sum(set)
+sorted(set)
 
+
+"""
+
+# ! Find Minimun / Minimum value in set
+
+# s=set([1,2,3,4])
+# print(max(s))
+# print(min(s))
+
+# ! Subset
+
+set1={1,2,3,4}
+set2={1,2,3,4,5,6,7,8}
+print("Set 1 is a subset of set 2 ?: ",set1.issubset(set2))  #True
+print("Set 2 is a subset of set 1 ?: ",set2.issubset(set1))  # False
