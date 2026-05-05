@@ -42,3 +42,11 @@ Standard specific Library structure
 3.Name Tuple
 Default dict
 
+
+on the basis of TIME COMPLEXITY (O)
+struture      acces by Index   Search    Insertion?deletion
+
+List            O(1)            O(n)            O(n)
+
+Dict/set        NA              O(1)            O(n)
+
