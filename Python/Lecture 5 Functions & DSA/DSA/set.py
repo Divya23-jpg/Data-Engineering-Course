@@ -27,8 +27,12 @@
 # print(new)  #! If we print in a new line than loop use
 
 
-# ! Set to list
+# ! String to set
 
-s={"Hy I Am  Divya"}
-li=list(s)
-print(li)
+# s=set("Hy I Am  Divya")
+# print(s)
+
+# ! string  set to list
+# s=(1,1,2,3,4)
+# print(list(s))
+
