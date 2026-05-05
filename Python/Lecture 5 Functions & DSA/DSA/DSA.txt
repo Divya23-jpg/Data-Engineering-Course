@@ -28,3 +28,17 @@ Example: a=[10,20,'Divya',True]
 3.Each key is unique and immutable,the values associated with key can be any data type.
 3.Disctionary can have two or more dictionary means dict in dict.
 
+BUILT IN Function in Disctionary
+1.stack
+2.Queue
+3.Linked List
+4.trees
+5.Graphts
+
+Standard specific Library structure
+
+1.Deque
+2.counter
+3.Name Tuple
+Default dict
+
