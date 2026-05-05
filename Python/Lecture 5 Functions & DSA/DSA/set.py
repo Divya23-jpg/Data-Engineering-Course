@@ -91,9 +91,14 @@ sorted(set)
 
 # ! Subset
 
-set1={1,2,3,4}
-set2={1,2,3,4,5,6,7,8}
-print("Set 1 is a subset of set 2 ?: ",set1.issubset(set2))  #True
-print("Set 2 is a subset of set 1 ?: ",set2.issubset(set1))  # False
+# set1={1,2,3,4}
+# set2={1,2,3,4,5,6,7,8}
+# print("Set 1 is a subset of set 2 ?: ",set1.issubset(set2))  #True
+# print("Set 2 is a subset of set 1 ?: ",set2.issubset(set1))  # False
 
 
+set1={1,2,3}
+set2={3,4,5}
+print("Union:",set1 | set2 )
+print("Intersection:",set1 & set2 )
+print("Difference:",set1 - set2 )
