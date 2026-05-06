@@ -1,0 +1,19 @@
+OOPS :
+    1.Object Oriented programming is another way of organising code 
+    that uses objects and classes to represent any real word entitities
+    and behaviours
+    2.We can say Blue print
+    3.In Object has Attributes thing that has specific data and can perform certain actions using methods 
+
+Use :
+    1. use to organize code into classes and objects
+    2. Supports Encapsulations to group data and method together.
+    3. Enables Inheritance for Reusability and hierarcy
+    4. It allows polymorphrism for flexible method implementation
+    5. It Improves Modularity, Scalability and Maintability
+
+
+Availables:
+
+1. Classes:  Collection of objects which has
+
