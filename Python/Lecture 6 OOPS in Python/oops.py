@@ -26,16 +26,16 @@
 
 #  ! Create a  class for vehicles which shows info like vehicle_name,vehicle_type,top_speed,models etc
 
-# class Vehicle:
-#     def __init__(self):
-#         self.v_name = input("Enter Vehicle Name: ")
-#         self.v_type = input("Enter Vehicle Type: ")
-#         self.top_speed = input("Enter Vehicle Top speed: ")
-#         self.model = input("Enter Vehicle model: ")
+class Vehicle:
+    def __init__(self):
+        self.v_name = input("Enter Vehicle Name: ")
+        self.v_type = input("Enter Vehicle Type: ")
+        self.top_speed = input("Enter Vehicle Top speed: ")
+        self.model = input("Enter Vehicle model: ")
 
-# # create object without arguments
-# v = Vehicle()
-# print(v.v_name, v.v_type, v.top_speed, v.model)
+# create object without arguments
+v = Vehicle()
+print(v.v_name, v.v_type, v.top_speed, v.model)
  
                     # ? Or
 # class Vehicle:
@@ -75,13 +75,13 @@ class Bank_Account:
         else:
             print("Deposite alway be in Positive")
 
-    def withdraw(self,amount):
-        if amount>0:
-            self.balance-=amount
-            print(f"Withdraw amount :{amount},Total amount is :{self.balance} ")
-        else:
-            print("Insufficient balance")
+#     def withdraw(self,amount):
+#         if amount>0:
+#             self.balance-=amount
+#             print(f"Withdraw amount :{amount},Total amount is :{self.balance} ")
+#         else:
+#             print("Insufficient balance")
 
-    def calculate_interest(self):
-        interest=self.balance*(self.interset/100)
-        print(f"Interset for current Balance is: {interest}")
+#     def calculate_interest(self):
+#         interest=self.balance*(self.interset/100)
+#         print(f"Interset for current Balance is: {interest}")

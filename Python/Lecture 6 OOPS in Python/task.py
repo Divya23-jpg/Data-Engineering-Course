@@ -13,3 +13,29 @@ output: Celcius:100
 
 
 """
+
+
+class Temperature:
+    def __init__(self):
+        self.t=float(input("Enter Temperature in Celcius:"))
+    
+    # Kelvin
+    def kelvin(self):
+        return self.t+273.15
+       
+    
+     # Fahrenheit
+    def fahrenheit(self):
+        return(self.t*1.8)+32
+    
+
+if __name__ == "__main__":
+    temp=Temperature()
+    print(f"Celcius :{temp.t}")
+    print(f"Kelvin: {temp.kelvin()}")
+    print(f"Fahrenheit: {temp.kelvin()}")
+   
+    
+
+
+
