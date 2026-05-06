@@ -48,3 +48,40 @@
 # # create object without arguments
 # v = Vehicle("BMW","4 Vehicle")
 # print(v.v_name, v.v_type, v.top_speed, v.model)
+
+
+
+
+
+# ! Creare a class for bank account which stores the info of bank account like 
+# ! account number, acount holder name, balance and interest rate
+# !Crreate few methods for deposit  , withdraw and calculate interest
+
+
+
+
+class Bank_Account:
+    def __init__(self):
+        self.account_num=account_num
+        self.account_holder=account_holder
+        self.balance=balance
+        self.interset=interest
+
+
+    def deposite(self,amount):
+        if amount>0:
+            self.balance+=amount
+            print(f"Deposite amount :{amount},Total amount is :{self.balance} ")
+        else:
+            print("Deposite alway be in Positive")
+
+    def withdraw(self,amount):
+        if amount>0:
+            self.balance-=amount
+            print(f"Withdraw amount :{amount},Total amount is :{self.balance} ")
+        else:
+            print("Insufficient balance")
+
+    def calculate_interest(self):
+        interest=self.balance*(self.interset/100)
+        print(f"Interset for current Balance is: {interest}")
