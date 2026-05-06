@@ -52,4 +52,12 @@ Availables:
         print(dog1.name)
         print(dog1.age)
 
-        
+
+
+
+Properties of OOPS or four pillars of OOPS
+
+1.Inheritance:Child class can acquire properties and methods from the parent class.
+2.Polymerphrism: Same operations can shows different Behaviors.
+3.Encapsulation:Bundle our Data(atrributes) and method (functions) within a class,restricting access to some component to control interaction
+4.Data Abstraction: Hides the internal Implementation details while exposing only the neccessary functions
