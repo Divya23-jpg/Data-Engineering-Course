@@ -7,22 +7,40 @@ Implement subclasses for each shape and override the area and perimeter method a
 
 """
 
+import math
+
 class Shape:
     def area(self):
-        self.s=int(input("Enter side:"))
+       pass
+
+    def perimeter(self):
+       pass
      
     
 
 class Square(Shape):
-    def area(self):
-        return f"Area of Square is { self.s*4}"
+    def area(self,l):
+        return f"Area of Square is {l*l}"
+    
+    def perimeter(self,l):
+          return f"Perimeter of Square is {4*l}"
+        
     
 
 class Circle(Shape):
+    def __init__(self,radius):
+        self.radius=radius
+        
     def area(self):
-        return " Area of Circle"
+        return f" Area of Circle: {2 * math.pi * self.radius **2}"
+    
+    def perimeter(self):
+         return f" Perimeter of Circle: { math.pi * self.radius * self.radius}"
+          
+ 
     
 
-s=Square()
-s.area()
+s=Circle()
+print(s.area(2))
+print(s.perimeter(4))
 
