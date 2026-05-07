@@ -24,5 +24,8 @@ class Car(Transport):
         print("Car is moving......")
 
 my_car=Car()
-my_car.start()
-my_car.drive()
+my_car.start()  #Inheritance method from Transport class
+my_car.drive()  # method from Car class
+
+
+
