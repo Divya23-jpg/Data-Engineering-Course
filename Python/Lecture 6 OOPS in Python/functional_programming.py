@@ -30,5 +30,38 @@ a variable after its been initialized.But we can create new variable
 
 """
 
+# ! PURE FUNCTION
+
+# def pure_func(list):
+#     new_list=[]
+#     for i in list:
+#         new_list.append(i**2)
+#     return new_list
+
+# my_list=[1,2,3,4]
+# modified=pure_func(my_list)
+# print(modified)
 
 
+# ! Recursion
+
+# def factorial(n):
+#     if n==0 or n==1:
+#         return 1
+#     else:
+#         return n* factorial(n-1)
+# print(factorial(5))
+
+
+# ! Functions are First class Citizens in Python
+
+def shout(text):
+    return text.upper() + "!!!"
+def whisper(text):
+    return text.lower() + "..."
+def greet(func):
+    greeting=func("Hello World")
+    print(greeting)
+
+greet(shout)
+greet(whisper)
