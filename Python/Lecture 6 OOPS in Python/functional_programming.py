@@ -26,6 +26,15 @@ a variable after its been initialized.But we can create new variable
     The first class variable can be passed to function as a peramter and can be return from functions
     or store in data structure
 
+    
+Built in Higher order function
+1.Map() : returnd a list of the results after applying the given function to each item of the given iterable
+
+Syntax:
+    map(func,iter)
+    func: function , iter: Iteration
+2.filter()
+3.lambda()
 
 
 """
@@ -60,7 +69,7 @@ def shout(text):
 def whisper(text):
     return text.lower() + "..."
 def greet(func):
-    greeting=func("Hello World")
+    greeting=func("Hello World") 
     print(greeting)
 
 greet(shout)
