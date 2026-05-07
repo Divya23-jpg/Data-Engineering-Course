@@ -10,4 +10,21 @@ It al achivesd by Method Overriding and Method Overloading
 """
 
 
+# Example
+class Shape:
+    def area(self):
+        pass
 
+    
+class Square(Shape):
+    def area(self):
+        return "Area of Square"
+    
+
+class Circle(Shape):
+    def area(self):
+        return " Area of Circle"
+    
+shape=[Square(),Circle()]
+for s in shape:
+    print(s.area())
