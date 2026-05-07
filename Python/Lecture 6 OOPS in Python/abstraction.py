@@ -9,10 +9,11 @@ Implemented using abstract base classes with the abc
 
 """
 
-from abc import ABC,abstractmethod
+# from abc import ABC,abstractmethod
 
-class Animal(ABC):
-    @abstractmethod
-    def sound(self):
-        pass
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+
 
