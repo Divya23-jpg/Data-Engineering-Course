@@ -14,19 +14,15 @@ class Shape:
     
 
 class Square(Shape):
-    def area(self,l):
-       self.l=length
-      
-
-       
-        
-       return f"Area of Square is { self.l*4}"
+    def area(self):
+        return f"Area of Square is { self.s*4}"
     
 
 class Circle(Shape):
     def area(self):
         return " Area of Circle"
     
-s=Square(4)
-print(s.area())
+
+s=Square()
+s.area()
 
