@@ -13,18 +13,20 @@ It al achivesd by Method Overriding and Method Overloading
 # Example
 class Shape:
     def area(self):
-        pass
-
+        self.s=int(input("Enter side:"))
+        # self.b=int(input("Enter breadth:"))
     
+# ! wrong output TRY
 class Square(Shape):
     def area(self):
-        return "Area of Square"
+        self.s*self.s
+        return f"Area of Square is {self.s}"
     
 
 class Circle(Shape):
     def area(self):
         return " Area of Circle"
     
-shape=[Square(),Circle()]
+shape=[Shape(),Square(),Circle()]
 for s in shape:
     print(s.area())
