@@ -65,3 +65,13 @@ def greet(func):
 
 greet(shout)
 greet(whisper)
+
+"""
+A function is an instamce of object type.
+You can store the function in a variable
+You can pass the function as an argument to another function
+You can return a function from another function
+You can store functions in data structure such as list,dict,etc
+
+
+"""
