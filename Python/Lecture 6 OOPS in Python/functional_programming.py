@@ -21,10 +21,14 @@ language . Iteration in Func. Prog. done through recursion
 a variable after its been initialized.But we can create new variable
 
 
-
+4. Functions are First class and can be Higher Order:
+    First class (functions) are treated as First class variable
+    The first class variable can be passed to function as a peramter and can be return from functions
+    or store in data structure
 
 
 
 """
+
 
 
