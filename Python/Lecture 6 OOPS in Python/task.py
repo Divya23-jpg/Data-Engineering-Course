@@ -26,14 +26,14 @@ class Temperature:
     
      # Fahrenheit
     def fahrenheit(self):
-        return(self.t*1.8)+32
+        return self.t*(1.8)+32
     
 
 if __name__ == "__main__":
     temp=Temperature()
     print(f"Celcius :{temp.t}")
     print(f"Kelvin: {temp.kelvin()}")
-    print(f"Fahrenheit: {temp.kelvin()}")
+    print(f"Fahrenheit: {temp.fahrenheit()}")
    
     
 

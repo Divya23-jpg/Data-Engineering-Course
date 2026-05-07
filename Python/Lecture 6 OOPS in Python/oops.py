@@ -13,11 +13,11 @@
 #         if 5<= current_hour<12:
 #             greeting="Good morning"
 #         elif 12<= current_hour<18:
-#             greeting="Good Evening"     
-
-
-
-
+#             greeting="Good Evening"    
+#         else:
+#             greeting="Good night"   
+        
+#         return f"{greeting},{self.name}"
 
 
 # if __name__ == "__main__":
@@ -26,16 +26,16 @@
 
 #  ! Create a  class for vehicles which shows info like vehicle_name,vehicle_type,top_speed,models etc
 
-class Vehicle:
-    def __init__(self):
-        self.v_name = input("Enter Vehicle Name: ")
-        self.v_type = input("Enter Vehicle Type: ")
-        self.top_speed = input("Enter Vehicle Top speed: ")
-        self.model = input("Enter Vehicle model: ")
+# class Vehicle:
+#     def __init__(self):
+#         self.v_name = input("Enter Vehicle Name: ")
+#         self.v_type = input("Enter Vehicle Type: ")
+#         self.top_speed = input("Enter Vehicle Top speed: ")
+#         self.model = input("Enter Vehicle model: ")
 
-# create object without arguments
-v = Vehicle()
-print(v.v_name, v.v_type, v.top_speed, v.model)
+# # create object without arguments
+# v = Vehicle()
+# print(v.v_name, v.v_type, v.top_speed, v.model)
  
                     # ? Or
 # class Vehicle:
@@ -46,7 +46,7 @@ print(v.v_name, v.v_type, v.top_speed, v.model)
 #         self.model =model
 
 # # create object without arguments
-# v = Vehicle("BMW","4 Vehicle")
+# v = Vehicle("BMW","4 Vehicle",220,XUV)
 # print(v.v_name, v.v_type, v.top_speed, v.model)
 
 
@@ -61,7 +61,7 @@ print(v.v_name, v.v_type, v.top_speed, v.model)
 
 
 class Bank_Account:
-    def __init__(self):
+    def __init__(self,account_num,account_holder,balance,interest):
         self.account_num=account_num
         self.account_holder=account_holder
         self.balance=balance
@@ -75,13 +75,19 @@ class Bank_Account:
         else:
             print("Deposite alway be in Positive")
 
-#     def withdraw(self,amount):
-#         if amount>0:
-#             self.balance-=amount
-#             print(f"Withdraw amount :{amount},Total amount is :{self.balance} ")
-#         else:
-#             print("Insufficient balance")
+    def withdraw(self,amount):
+        if amount>0:
+            self.balance-=amount
+            print(f"Withdraw amount :{amount},Total amount is :{self.balance} ")
+        else:
+            print("Insufficient balance")
 
-#     def calculate_interest(self):
-#         interest=self.balance*(self.interset/100)
-#         print(f"Interset for current Balance is: {interest}")
+    def calculate_interest(self):
+        interest=self.balance*(self.interset/100)
+        print(f"Interset for current Balance is: {interest}")
+
+bank_account=Bank_Account("123456","Divya",1000,4.0)
+bank_account.deposite(1500)
+bank_account.withdraw(500)
+bank_account.calculate_interest()
+
