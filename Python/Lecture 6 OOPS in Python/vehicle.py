@@ -3,8 +3,6 @@
 # ! The "Car" and "Motorcycle" classes overrides this method to provide their Specific implementation.
 # ! The "Initiate_engine" function accepts objects of different type and incokes the correct "start_engine" method
 
-
-
 class Vehicle:
     def start_engine(self):
         return "Engine has started..."
