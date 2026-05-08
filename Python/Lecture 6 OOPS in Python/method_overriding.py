@@ -7,9 +7,9 @@ Benifits:
 4. Multiple team can work on different parts of code without any conflict
 5. It allows function to take various types of data input. The eleminates the need to separate functions for multiple data types like str,list,int etc
 
-
-
 """
+
+# ! Method Overriding in Polymerphrism
 # class DataEngineering:  #Parent class
 #     def course(self):
 #         return "Data Engeeniring Course"
@@ -29,7 +29,7 @@ Benifits:
 #     print(i.course())
 
 
-# Polymerphrism in operators
+#! Polymerphrism in operators
 # ? IN Integer
 print("+ in Integers:",1+2)
 # ? IN String
