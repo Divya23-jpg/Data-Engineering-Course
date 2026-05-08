@@ -1,7 +1,7 @@
 
 # ! Craete a variable length argument type method for calculating the avg score of a class room.Input can be of different length and individual score
 
-# !Remaining
+# !Remaining 
 
 class Stu_score:
     def avg(self,*args,):
