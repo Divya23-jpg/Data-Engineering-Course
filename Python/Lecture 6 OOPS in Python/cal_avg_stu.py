@@ -13,3 +13,4 @@ class Stu_score:
 cls=Stu_score()
 print(cls.avg())
 
+
