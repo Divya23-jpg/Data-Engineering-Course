@@ -22,6 +22,8 @@ Functionality:
 Types of polymerphrism:
 1.Compile time: Functional Overloading and Operator Overloading
 2. Run time : Virtual Ex: Random functions(shape and course)
+
+
 """
 
 
@@ -48,6 +50,26 @@ Types of polymerphrism:
 
 
 
-print(len("Divya"))
-print(len([1,2,3]))
-print(len((1,2,3,3)))
+# print(len("Divya"))
+# print(len([1,2,3]))
+# print(len((1,2,3,3)))
+
+
+# ! WAP for polymerphrism for multiple Animal like Dog,Cat etc which produce sounds like Dog "Woof" or "Meaow"
+
+
+
+class Animal:
+    def speak(self):
+        return "Sounding......"
+    
+class Dog(Animal):
+    def speak(self):
+        return "Dog Sounds:Woof"
+
+class Cat(Animal):
+    def speak(self):
+        return "Cat sounds:Meowwww"
+    
+for i in [Animal() ,Dog(),Cat()]:
+    print(i.speak())
