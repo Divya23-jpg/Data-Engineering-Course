@@ -33,6 +33,7 @@ Built in Higher order function
 Syntax:
     map(func,iter)
     func: function , iter: Iteration
+
 2.filter()
 3.lambda()
 
@@ -84,3 +85,15 @@ You can store functions in data structure such as list,dict,etc
 
 
 """
+
+# ? map function
+
+def add(n):
+    return n+n
+
+num=(1,2,3,4)
+result=map(add,num)
+
+print(type(result))   #<map object at 0x000001E7FDCBC5E0>
+for x in result:
+    print(x)
