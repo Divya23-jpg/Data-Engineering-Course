@@ -1,16 +1,16 @@
 
-class DataEngineering:
+class DataEngineering:  #Parent class
     def course(self):
         return "Data Engeeniring Course"
     
 
-class Python(DataEngineering):
-    def course(self):
+class Python(DataEngineering):  # Child Class 
+    def course(self):           # Method Overriding 
         return "Python Course"
     
 
-class data(DataEngineering):
-    def course(self):
+class data(DataEngineering):  # Child Class
+    def course(self):         # Method Overriding 
         return "Data Course"
     
 
