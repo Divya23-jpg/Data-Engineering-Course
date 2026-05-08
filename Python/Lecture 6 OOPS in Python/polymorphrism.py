@@ -18,6 +18,10 @@ Many forms of objects or functions depending on their usage and working.
 Functionality:
 
 1. The main role of Polymerphism in OOP is to ensure that different type of objects use the same methods or operators
+
+Types of polymerphrism:
+1.Compile time: Functional Overloading and Operator Overloading
+2. Run time : Virtual Ex: Random functions(shape and course)
 """
 
 
