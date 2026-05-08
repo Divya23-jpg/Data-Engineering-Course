@@ -11,6 +11,8 @@ It al achivesd by Method Overriding and Method Overloading
 It allows developers to create more flexible code because, it makes object behaves similarly
 even when they have separate implementation
 
+
+Greek word: Poly + Morphism  = Multiple/Multi + froms
 """
 
 
