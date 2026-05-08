@@ -3,7 +3,11 @@ Benifits:
 
 1. It makes Simplified code as a single interface can handle multiple data type
 2. Functions and methods of a class can be used for different purposes, which provide code reusability
-3.It offers code flexibility as child classes can be use method of parent classes
+3. It offers code flexibility as child classes can be use method of parent classes wihtout changin code
+4. Multiple team can work on different parts of code without any conflict
+5. It allows
+
+
 """
 class DataEngineering:  #Parent class
     def course(self):
