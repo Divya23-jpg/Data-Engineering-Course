@@ -28,22 +28,21 @@ Types of polymerphrism:
 
 #1. Example
 class Shape:
-    def area(self):
+    def area(self,s):
         self.s=int(input("Enter side:"))
         # self.b=int(input("Enter breadth:"))
     
 # # ! wrong output TRY
 class Square(Shape):
     def area(self):
-        self.s=self.s*self.s
-        return f"Area of Square is {self.s}"
+       return f"Area of Square is {self.s*self.s}"
     
 
-class Circle(Shape):
-    def area(self):
-        return " Area of Circle"
+# class Circle(Shape):
+#     def area(self):
+#         return " Area of Circle"
     
-shape=[Shape(),Square(),Circle()]
+shape=[Shape(),Square()]
 for s in shape:
     print(s.area())
 
