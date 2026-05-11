@@ -38,6 +38,9 @@ class Square(Shape):
        return f"Area of Square is {self.s*self.s}"
     
 
+
+    
+
 # class Circle(Shape):
 #     def area(self):
 #         return " Area of Circle"
