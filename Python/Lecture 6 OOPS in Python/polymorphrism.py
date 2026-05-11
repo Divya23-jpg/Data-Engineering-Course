@@ -23,7 +23,6 @@ Types of polymerphrism:
 1.Compile time: Functional Overloading and Operator Overloading
 2. Run time : Virtual Ex: Random functions(shape and course)
 
-
 """
 
 
@@ -36,7 +35,7 @@ class Shape:
 # # ! wrong output TRY
 class Square(Shape):
     def area(self):
-        self.s*self.s
+        self.s=self.s*self.s
         return f"Area of Square is {self.s}"
     
 
