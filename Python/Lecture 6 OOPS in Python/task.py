@@ -57,6 +57,7 @@ stu_detail=student()
 stu_detail.stu()
 print(f"Name of student is: {stu_detail.name}")
 print(f"Name of student is: {stu_detail.age}")
+
 """
 2. Method in Class
 Create a Calculator class with a method add(a, b), multiply, divide, subtract that returns the operation of two numbers.
