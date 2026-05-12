@@ -1,11 +1,8 @@
 """
 
 Abstraction:
-
 hides underlying complexities while hihglighting what is required.
 Implemented using abstract base classes with the abc
-
-
 
 """
 
