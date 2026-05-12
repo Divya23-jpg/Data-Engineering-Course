@@ -1,6 +1,6 @@
 """
 In Method overriding inheritance concept is taken
-
+parameter , function name,return type all are same
 Benifits:
 
 1. It makes Simplified code as a single interface can handle multiple data type
