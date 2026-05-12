@@ -1,4 +1,5 @@
 """
+In Method overriding inheritance concept is taken
 Benifits:
 
 1. It makes Simplified code as a single interface can handle multiple data type
