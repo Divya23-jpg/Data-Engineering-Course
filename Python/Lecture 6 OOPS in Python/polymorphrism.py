@@ -21,6 +21,9 @@ Functionality:
 
 Types of polymerphrism:
 1.Compile time: Functional Overloading and Operator Overloading
+
+
+
 2. Run time :Overriding and Virtual Ex: Random functions(shape and course)
 
 """
