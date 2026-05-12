@@ -1,0 +1,6 @@
+Method overloading                   Method Overiding
+
+Occurs into the same class         Occurs in between parent and Child class
+Parameter must be same              Parameter must be different
+its happen in Compile Time          its happen in Runtime Time
+Inheritance not required            Inheritance  required
