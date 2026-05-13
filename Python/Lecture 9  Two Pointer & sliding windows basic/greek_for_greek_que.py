@@ -8,10 +8,14 @@ Output: [-8,0,-6,-6]
 def window(arr,k):
     n=len(arr)
     li=[]
-    for i in range(n-1):
+    for i in range(k-1):
+        if i<0:
+            li.append(arr[i])
+    
+    for j in range(1,k+1):
         
     
-    return li
+  
 
 
 
