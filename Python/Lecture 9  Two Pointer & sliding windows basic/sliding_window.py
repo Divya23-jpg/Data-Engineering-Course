@@ -5,7 +5,7 @@ problem solved by sliding window
 1.Sub array,/sub string 
 2.Array/ String
 
-
+Optimiziation is possible where something is repeating
 
 
 Types of  sliding window
@@ -22,14 +22,45 @@ Sum:       6,    9,  12,  15
 
 
 """
-# iteration : n-k+1  n is a size of array
-def subarray(arr[n], k):
-    max_sum=0
-    for i in range(n-k+1):
-        curr_sum=0
-        for j in range(k):
-            curr_sum=curr_sum+arr[i+j]
-    max_sum=max(max_sum,curr_sum)
+# ? Btrute force aprroach
+# ! iteration : n-k+1  n is a size of array
+# * Time complexity is O(n2)
+# def subarray(arr,n, k):    
+#     max_sum=0
+#     for i in range(n-k+1):
+#         curr_sum=0
+#         for j in range(k):
+#             curr_sum=curr_sum+arr[i+j]
+#         max_sum=max(max_sum,curr_sum)
+#     return f"Maximum sum of array is: {max_sum}"
+
+   
+# if __name__=="__main__":
+#     arr=[5,2,-1,0,3]
+#     k=3
+#     n=len(arr)
+#     print(subarray(arr,n,k))
+
+# ! using sliding window
+# * Time complexity is O(n)
+def sub_array_window(arr,k):
+    n=len(arr)
+    if n<k:
+        return -1
+    
+    window=sum(arr[:k])
+    max_sum=window
+    
+    for i in range(k,n):
+        window+= arr[i]-arr[i-k]
+        max_sum=max(max_sum,window)
+    return f"Maximum sum of array By sliding windowis: {max_sum}"
+
+if __name__ =="__main__":
+    arr=[5,2,-1,0,3]
+    k=3
+    n=len(arr)
+    print(sub_array_window(arr,k))
 
 
 
