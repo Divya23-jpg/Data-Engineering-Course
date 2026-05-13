@@ -7,13 +7,9 @@ Output: [-8,0,-6,-6]
 
 def window(arr,k):
     n=len(arr)
-    for i in range(n+1):
-        Sum=sum(arr[:k])
-        li=[]
-        if Sum<0:
-            li.append(0)
-        else:
-            li.append(i)
+    li=[]
+    
+    
     return li
 
 
