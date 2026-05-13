@@ -22,6 +22,18 @@ Sum:       6,    9,  12,  15
 
 
 """
+# iteration : n-k+1  n is a size of array
+def subarray(arr[n], k):
+    max_sum=0
+    for i in range(n-k+1):
+        curr_sum=0
+        for j in range(k):
+            curr_sum=curr_sum+arr[i+j]
+    max_sum=max(max_sum,curr_sum)
+
+
+
+
 # ?  Variable  size window 
 # ! Find Sum of a Maximum sub array  that gives target 5 and  window size will be anything
 
