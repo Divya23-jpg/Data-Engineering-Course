@@ -4,7 +4,7 @@ window=2
 input: arr[-8,2,3,-6,1]
 Output: [-8,0,-6,-6]
 """
-
+from collections import deque
 def window(arr,k):
     n=len(arr)
     li=[]

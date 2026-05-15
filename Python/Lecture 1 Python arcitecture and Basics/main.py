@@ -1,6 +1,6 @@
 # print("Hy,this is an exaple of a Python Script")
 
-# For terminal :  python main.py for run
+"For terminal :  python main.py for run"
 
 
 

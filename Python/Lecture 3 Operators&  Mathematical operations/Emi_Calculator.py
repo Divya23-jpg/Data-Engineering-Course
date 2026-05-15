@@ -1,6 +1,6 @@
 """
 A person wants to buy a bike has X rs,he dont have total amount 
-He can now pat total price for bike in monthly installment.
+He can now parchase total price for bike in monthly installment.
 
 Equated Monthly Installment [EMI]
 
