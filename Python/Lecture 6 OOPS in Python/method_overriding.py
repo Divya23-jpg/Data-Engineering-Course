@@ -12,27 +12,27 @@ Benifits:
 """
 
 # ! Method Overriding in Polymerphrism
-# class DataEngineering:  #Parent class
-#     def course(self):
-#         return "Data Engeeniring Course"
+class DataEngineering:  #Parent class
+    def course(self):
+        return "Data Engeeniring Course"
     
 
-# class Python(DataEngineering):  # Child Class 
-#     def course(self):           # Method Overriding 
-#         return "Python Course"
+class Python(DataEngineering):  # Child Class 
+    def course(self):           # Method Overriding 
+        return "Python Course"
     
 
-# class data(DataEngineering):  # Child Class
-#     def course(self):         # Method Overriding 
-#         return "Data Course"
+class data(DataEngineering):  # Child Class
+    def course(self):         # Method Overriding 
+        return "Data Course"
     
 
-# for i in [Python(),data()]:
-#     print(i.course())
+for i in [Python(),data()]:
+    print(i.course())
 
 
-#! Polymerphrism in operators
-# ? IN Integer
-print("+ in Integers:",1+2)
-# ? IN String
-print("+ in String:","Divya"+"Kumawat")
+# #! Polymerphrism in operators
+# # ? IN Integer
+# print("+ in Integers:",1+2)
+# # ? IN String
+# print("+ in String:","Divya"+"Kumawat")

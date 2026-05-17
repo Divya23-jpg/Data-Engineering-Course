@@ -1,5 +1,6 @@
 """
- Loops are the block of code used to execute specific code block repeatatively on the basis of a condition
+ Loops are the block of code used to execute specific code block repeatatively on the basis of 
+ a condition
 
 There are 2 types of loops in python:
 1.for loop
