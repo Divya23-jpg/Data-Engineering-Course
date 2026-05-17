@@ -14,7 +14,6 @@ Types of  sliding window
 """
 # ?  Fixed size window (k is given)
 # ! Find Sum of a Maximum sub array and  window size will be k=3
-
 """
 1,2,3,4,5,6
 subarray: 123 , 234, 345, 456,
