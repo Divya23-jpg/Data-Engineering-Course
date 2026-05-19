@@ -19,5 +19,9 @@ hash()
 
 # ! List hashtable
 
+# Initilize list with 10 None act as 
+my_list=[None,None,None,None,None,None,None,None,None,None]
 
-my_list=[None,None,None,None,None,None,None]
+
+def hash_function(value):
+    sum_of_char=sum
