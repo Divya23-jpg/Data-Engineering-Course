@@ -14,7 +14,6 @@ d={"name":{"Divya","rohan"},
 
 print(d.keys())
 
-
 # ! Separate Chaining method of a hash table
 class Node:
     def __init__(self,key,value):
