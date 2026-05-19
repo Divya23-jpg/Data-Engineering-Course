@@ -39,5 +39,5 @@ def insert(self,key,value):
 
 
 
-# if __name__=="main":
-#     hash_table=
+"""if __name__=="main":
+   """
