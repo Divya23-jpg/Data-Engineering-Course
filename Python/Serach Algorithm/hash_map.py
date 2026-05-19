@@ -8,11 +8,14 @@ process to convert into hash table
 index=keys
 value=value
 """
-# d={"name":["Divya","rohan"],
-#     "roll_no":[10,34]}
+d={"name":{"Divya","rohan"},
+    "roll_no":{10,34}
+  }
 
-# print(d.keys())
+print(d.keys())
 
+
+# ! Separate Chaining method of a hash table
 class Node:
     def __init__(self,key,value):
         self.key=key
@@ -21,11 +24,20 @@ class Node:
 class HashTable:
     def __init__(self,size,capacity):
         self.size=size
-        self.capacity=capacity
-        self.table=None
+        self.capacity=capacity  # 10%num=index
+        self.table=[None]*self.capacity
 
 def _hash(self,key):
     return hash(key) % self.capacity
 
-if __name__=="main":
-    hash_table=
+
+def insert(self,key,value):
+    index=self.hash(key)
+    new_node=Node(key,value)
+
+    if self.table[index] is None:
+
+
+
+# if __name__=="main":
+#     hash_table=
