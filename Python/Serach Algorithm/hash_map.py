@@ -23,7 +23,7 @@ class Node:
 class HashTable:
     def __init__(self,size,capacity):
         self.size=size
-        self.capacity=capacity  # 10%num=index
+        self.capacity=capacity  # 10 % num = index
         self.table=[None]*self.capacity
 
 def _hash(self,key):
