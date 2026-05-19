@@ -8,8 +8,16 @@ hash()
 
 
 # !1.hash values are immutable
-print(hash(3.14))
-print(hash("Lorem"))
-print(hash("Lorem"))
-print(hash("divya"))
-print(hash("hello I am divya")==hash("hello I am divya"))
+# print(hash(3.14))
+# print(hash("Lorem"))
+# print(hash("Lorem"))
+# print(hash("divya"))
+# print(hash("hello I am divya")==hash("hello I am divya"))
+
+
+
+
+# ! List hashtable
+
+
+my_list=[None,None,None,None,None,None,None]
