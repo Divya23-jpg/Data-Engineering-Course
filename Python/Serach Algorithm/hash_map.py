@@ -38,7 +38,6 @@ def insert(self,key,value):
     if self.table[index] is None:
         self.table[index]=new_node
         self.size+=1
-
     else:
         current=self.table
         
