@@ -28,4 +28,4 @@ def _hash(self,key):
     return hash(key) % self.capacity
 
 if __name__=="main":
-    hash_
+    hash_table=
