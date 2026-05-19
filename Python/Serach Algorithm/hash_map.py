@@ -27,3 +27,5 @@ class HashTable:
 def _hash(self,key):
     return hash(key) % self.capacity
 
+if __name__=="main":
+    hash_
