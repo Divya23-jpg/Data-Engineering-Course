@@ -81,7 +81,7 @@ def sum(num):
     else:
         return num+sum(num-1)
     
-num=5
+num=int(input("Enter Number to sum :"))
 
 # * 5+4+3+2+1
-print("Sum of n natural num is :", sum(num))
+print("Sum of ", num,"natural num is :", sum(num))
