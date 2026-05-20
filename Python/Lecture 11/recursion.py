@@ -82,4 +82,6 @@ def sum(num):
         return num+sum(num-1)
     
 num=5
+
+# * 5+4+3+2+1
 print("Sum of n natural num is :", sum(num))
