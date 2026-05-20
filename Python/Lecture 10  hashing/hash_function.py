@@ -27,19 +27,19 @@ my_list=[None,None,None,None,None,None,None,None,None,None]
 def hash_function(value):
     sun_of_char=0
     for char in value:
-        sun_of_char+=ord(char)
-    return sun_of_char % len(my_list)
+        sun_of_char+=ord(char)  #ord() get ASCII value of each char and sum them
+    return sun_of_char % len(my_list)  # returns the index by taking modulus with length of the list
     
 print("Hash function for Divya list is : ", hash_function("Divya"))
 
 def add(name):
-    index=hash_function(name)
-    my_list[index]=[name]
+    index=hash_function(name)     # get index for given name using hash()
+    my_list[index]=[name]         # store the name at computed index in the list
 
 # ! function to stop collision of names at the same index
 
 def add1(name):
-    index=hash_function(name)
+    index=hash_function(name)   # get the index for given name using hash()
     if my_list[index] is None:
         my_list[index]=[name]
     else:
@@ -51,7 +51,7 @@ print(my_list)
 
 def search(name):
     index=hash_function(name)
-    return my_list[index]==[name]
+    return my_list[index]==[name]   # returns True if given name is in list at the computated index
 
 print(search("Divya"))
 print(search("Rohan"))
