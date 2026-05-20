@@ -11,11 +11,10 @@ def add(a,b):
         return add(a+1,b-1)
     
 # print(add(3,4))
-# ! Problem 1: Fibonacci series 
+# ! Problem 2: Fibonacci series 
 def fibonacci(num):
-    n=1
     if num<=1:
-        return 1
+        return num
     else:
         return fibonacci(num-1) + fibonacci(num-2)
     
@@ -24,7 +23,8 @@ print("Fibonacci series:")
 for i in range(num):
     print(fibonacci(i),end=' ')
 
-# ! Problem 2: Print all increasing sequence of length k from a set of n natural number
+
+# ! Problem 3: Print all increasing sequence of length k from a set of n natural number
 # !Describtion: Given two numbers n and k , write a recursive function to print all increasing sequences 
 # ! of length k that can be formed the first n natutral numbers
 # Input:  n=3 k=2
