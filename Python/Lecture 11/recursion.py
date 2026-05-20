@@ -12,16 +12,16 @@ def add(a,b):
     
 # print(add(3,4))
 # ! Problem 2: Fibonacci series 
-def fibonacci(num):
-    if num<=1:
-        return num
-    else:
-        return fibonacci(num-1) + fibonacci(num-2)
+# def fibonacci(num):
+#     if num<=1:
+#         return num
+#     else:
+#         return fibonacci(num-1) + fibonacci(num-2)
     
-num=10
-print("Fibonacci series:")
-for i in range(num):
-    print(fibonacci(i),end=' ')
+# num=10
+# # print("Fibonacci series:")
+# for i in range(num):
+#     # print(fibonacci(i),end=' ')
 
 
 # ! Problem 3: Print all increasing sequence of length k from a set of n natural number
@@ -50,3 +50,16 @@ for i in range(num):
 #     len+=1
 #     while(i<=n):
 #         arr[len-1] 
+
+
+# ! Problem 4: Factorial
+
+def factorial(n):
+    if n==0 or n==1:
+        return n
+    else:
+        return n*factorial(n-1)
+    
+num=5
+# * 1*2*3*4*5
+print("Factorial Number is:",factorial(num))
