@@ -2,6 +2,14 @@
 
 Function Call itself is called recursion
 
+?Steps to implement recursion in Python:
+
+1. Define the  Base case (condition where have to end)
+2. Define The recursive case (Recursive case should move toward base case to end)
+3. Ensure that the recursive terminates
+4. Test the function
+
+
 """
 # ! Problem 1: Add without Operator
 def add(a,b):
@@ -63,3 +71,5 @@ def factorial(n):
 num=5
 # * 5 * 4* 3* 2 *1=120
 # print("Factorial Number is:",factorial(num))
+
+
