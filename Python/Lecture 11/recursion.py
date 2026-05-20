@@ -45,8 +45,6 @@ def sequence(n,k,len,arr):
         return 
     i=1 if len==0 else arr[len-1] +1
 
-
-
     len+=1
     while(i<=n):
         arr[len-1] 
