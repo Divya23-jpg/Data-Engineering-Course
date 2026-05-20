@@ -73,3 +73,13 @@ num=5
 # print("Factorial Number is:",factorial(num))
 
 
+# ! Problem 4: Sum of all n natural number
+
+def sum(num):
+    if num==0:
+        return num
+    else:
+        return num+sum(num-1)
+    
+num=5
+print("Sum of n natural num is :", sum(num))
