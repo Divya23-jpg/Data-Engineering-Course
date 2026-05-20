@@ -24,4 +24,28 @@ my_list=[None,None,None,None,None,None,None,None,None,None]
 
 
 def hash_function(value):
-    sum_of_char=sum
+    sun_of_char=0
+    for char in value:
+        sun_of_char+=ord(char)
+    return sun_of_char % len(my_list)
+    
+print("Hash function for Divya list is : ", hash_function("Divya"))
+
+def add(name):
+    index=hash_function(name)
+    my_list[index]=[name]
+
+
+add("Divya")
+add("Rohan")
+add("Sourabh")
+print(my_list)
+
+def search(name):
+    index=hash_function(name)
+    return my_list[index]==name
+
+print(search("Divya"))
+print(search("Rohan"))
+print(search("Anushree"))
+print(search("Sourabh"))
