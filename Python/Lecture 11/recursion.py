@@ -61,5 +61,5 @@ def factorial(n):
         return n*factorial(n-1)
     
 num=5
-# * 1*2*3*4*5
-print("Factorial Number is:",factorial(num))
+# * 5 * 4* 3* 2 *1=120
+# print("Factorial Number is:",factorial(num))
