@@ -43,7 +43,7 @@ print(my_list)
 
 def search(name):
     index=hash_function(name)
-    return my_list[index]==name
+    return my_list[index]==[name]
 
 print(search("Divya"))
 print(search("Rohan"))
