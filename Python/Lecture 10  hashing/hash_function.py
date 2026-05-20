@@ -35,7 +35,14 @@ def add(name):
     index=hash_function(name)
     my_list[index]=[name]
 
+# ! function to stop collision of names at the same index
 
+def add1(name):
+    index=hash_function(name)
+    if my_list[index] is None:
+        my_list[index]=[name]
+    else:
+        my_list[index].append(name)
 add("Divya")
 add("Rohan")
 add("Sourabh")
