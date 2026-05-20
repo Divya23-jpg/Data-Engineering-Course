@@ -85,3 +85,4 @@ num=int(input("Enter Number to sum :"))
 
 # * 5+4+3+2+1
 print("Sum of ", num,"natural num is :", sum(num))
+
