@@ -22,6 +22,7 @@ hash()
 # Initilize list with 10 None act as 
 my_list=[None,None,None,None,None,None,None,None,None,None]
 
+# * None means empty list []
 
 def hash_function(value):
     sun_of_char=0
