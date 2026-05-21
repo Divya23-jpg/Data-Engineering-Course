@@ -8,3 +8,15 @@ Merge Sort:
 
 """
 
+def merge_sort(arr):
+    n=len(arr)
+    
+
+
+
+
+
+arr=[12,11,13,5,6,7]
+print("Given Array is: ",arr)
+arr1=merge_sort(arr)
+print("Sorted Arrays is :",arr1)
