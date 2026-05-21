@@ -1,0 +1,27 @@
+Sorting can be defined as rearranging element in a specific order .
+It can be Ascending and Descending order
+
+
+Python Vuilt in function to sort
+1.sorted() :
+    1.It is used to return a new sorted list also accet any iterables (list,tuples,dictionaries,string , any datatype)
+     2.In this original remains unchange
+
+
+2.list.sort() :
+    1.It is used when you want to modify a list dictionary
+    2.return None
+    3.Only applicable for list datatype
+    4.original data will be overwritten with the sorted version
+
+
+
+Custom Sorting:
+    Two optional keywords argument are supportd in both
+    
+    1.reverse=True(Descending) / False (Ascending)
+   
+    2.Key: A function that transform each element before comparison
+        key=len to sort string by their length
+
+        
