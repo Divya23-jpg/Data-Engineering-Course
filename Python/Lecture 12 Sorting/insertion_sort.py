@@ -14,3 +14,10 @@ Insertion sort
 
 
 """
+
+def insertion (arr):
+    n=len(arr)
+    for i in range(n):
+        key=arr[i]
+        
+        
