@@ -14,13 +14,16 @@ Merge Sort:
 
 
     mid point=l+(r-1)/2
+    left divide=[:mid]
+    right divide: [mid:]
 """
 
 def merge_sort(arr):
     n=len(arr)
     if n<=1:
         return
-    m=n+(arr[0]-1)/2
+   
+
 
 
 
