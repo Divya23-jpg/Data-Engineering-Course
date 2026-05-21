@@ -5,12 +5,22 @@ Merge Sort:
     2.It divides the input array in two halves, call itself for the two halves and then merge the two sorted halves
     3.The merge() function is used for merging two sorting halves
 
+    Divide: Divide untill gets individual element
+    conquer: compare and Sort to the individual element 
+    merge: Merge after sorting
 
+
+    l=length r=1st element
+
+
+    mid point=l+(r-1)/2
 """
 
 def merge_sort(arr):
     n=len(arr)
-    
+    if n<=1:
+        return
+    m=n+(arr[0]-1)/2
 
 
 
