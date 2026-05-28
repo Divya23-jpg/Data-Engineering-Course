@@ -14,3 +14,28 @@ to get two potioned sub array
 
 """
 
+
+def partition(arr,low,high):
+    pivot=arr[high] #Last element  qill be pivot element
+    i=low-1  #Index of smaller element
+    for j in range(low,high):
+        if arr[j]<=pivot:
+            i+=1  # Increment index of the smaller element
+            arr[i],arr[j]=arr[j],arr[i]  # Swap the element
+    arr[i+1],arr[high]=arr[high],arr[i+1] #Swap pivot ele with element at index [i+1]
+    return i+1
+
+def Quick_sort(arr,low,high):
+    if low<high:
+        partitionIndex=partition(arr,low,high) # Partition index
+        Quick_sort(arr,low,partitionIndex - 1)  # Recursively sort ele before partition (left side of pivot)
+        Quick_sort(arr,partitionIndex +1,high)  # # Recursively sort ele before partition (right side of pivot)
+
+
+
+
+
+arr=[10,2,8,9,1,5]
+n=len(arr)
+Quick_sort(arr,0,n-1)
+print("sorted array is:",arr)
