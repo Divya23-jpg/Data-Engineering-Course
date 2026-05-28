@@ -21,10 +21,14 @@ Merge Sort:
 def merge_sort(arr):
     n=len(arr)
     if n<=1:
-        return
-   
+        return arr
+    mid=n//2
+    left=merge_sort(arr[:mid])
+    right=merge_sort(arr[mid:])
+    return merge(left,right)
 
-
+def merge(left,right):
+    
 
 
 
