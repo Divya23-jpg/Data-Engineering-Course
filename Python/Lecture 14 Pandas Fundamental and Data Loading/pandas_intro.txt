@@ -1,0 +1,22 @@
+Series:
+    A one dimentinal labeled array capable of holding 
+
+
+
+Essential Features:
+
+1.Data Input/Output: 
+    Reading from and writing to format like CSV,Excel,SQL databases,and Json,
+
+2.Cleaning:
+    Builtin function to handle ,remove,fill missing data (NAN) and duplicate
+
+3.Transformation:
+    Filtering , Merging, Reshaping, Creating Pivoting (rows to col, cols to rows) large dataset
+
+4. Aggregation:
+    Using "Group By" operations to organize data into categories and compute statistics like Sum or Average
+
+
+5.Time series:
+    sophesticated functionality for data  based on the date includinh the frequenecy coversion
