@@ -20,3 +20,13 @@ Essential Features:
 
 5.Time series:
     sophesticated functionality for data  based on the date includinh the frequenecy coversion
+
+
+
+Differenece between loc and iloc function
+
+loc:
+    when we call individual rows with their label
+
+iloc:
+    when we call individual rows with their position
