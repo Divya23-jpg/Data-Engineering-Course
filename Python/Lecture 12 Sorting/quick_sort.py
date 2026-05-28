@@ -14,7 +14,7 @@ to get two potioned sub array
 
 """
 
-
+# ! Lomuto Partition Scheme for Quicksort algorithm
 def partition(arr,low,high):
     pivot=arr[high] #Last element  qill be pivot element
     i=low-1  #Index of smaller element
