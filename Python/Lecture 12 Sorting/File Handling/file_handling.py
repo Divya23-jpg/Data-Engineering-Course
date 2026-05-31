@@ -33,15 +33,10 @@ etc through  a programming
 # ! We will check file is present or not
 
 try:
-    file=open('hello.txt','r')
+    file=open('txt.txt','r')
     content=file.read()
     print(content)
 
 except FileNotFoundError as e:
     print("File Not Found",e)
 
-finally:
-    try:
-        file.close()
-    
-    except NameError:
