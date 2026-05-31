@@ -23,11 +23,25 @@ etc through  a programming
 
 # ! Open,close  and Write in a file
 
-with open('writing.txt','w') as file:
-    file.write("I am Example of Writting to the file.\n")  # write in a file
-    file.write("This is 2nd statement.")
+# with open('writing.txt','w') as file:
+#     file.write("I am Example of Writting to the file.\n")  # write in a file
+#     file.write("This is 2nd statement.")
     
+# print("Writing to the file is Done")
 
-print("Writing to the file is Done")
 
+# ! We will check file is present or not
 
+try:
+    file=open('hello.txt','r')
+    content=file.read()
+    print(content)
+
+except FileNotFoundError as e:
+    print("File Not Found",e)
+
+finally:
+    try:
+        file.close()
+    
+    except NameError:
