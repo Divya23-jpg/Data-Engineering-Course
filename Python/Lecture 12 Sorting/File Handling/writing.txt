@@ -1,0 +1,2 @@
+I am Example of Writting to the file.
+This is 2nd statement.

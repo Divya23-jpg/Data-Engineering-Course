@@ -16,6 +16,18 @@ etc through  a programming
 
 """
 # ! Open and Read File  
-file=open('hello.txt','r') # Open filen in a read mode
-content=file.read()  # Read whole content from the file
-print(content) # print content of the file
+# file=open('hello.txt','r') # Open filen in a read mode
+# content=file.read()  # Read whole content from the file
+# print(content) # print content of the file
+
+
+# ! Open,close  and Write in a file
+
+with open('writing.txt','w') as file:
+    file.write("I am Example of Writting to the file.\n")  # write in a file
+    file.write("This is 2nd statement.")
+    
+
+print("Writing to the file is Done")
+
+
