@@ -1,8 +1,7 @@
 """
 
 File Handling refers to any Operations like Reading, writting,closing
-etc through  
-
+etc through  a programming
 
 
 """
