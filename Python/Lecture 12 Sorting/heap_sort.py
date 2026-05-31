@@ -15,7 +15,9 @@ Steo 5:Reduce the heap size by 1
 Steo 6:create heap with the root to restore the heap properly
 Steo 7:The array is  now sorted in the ascending order
 
-
+# * Time Complexity: O(nlogn)
+# * Space Complexity: O(nlogn)                                     -> O(1)
+# It is an Auxillary space complexity  due to recursive call stack  ,  It is an Auxillary space complexity  for single item
 """
 def heapify(arr,n,i):
     largest=i # Initialize largest as root
