@@ -1,6 +1,14 @@
-Series:
-    A one dimentinal labeled array capable of holding 
+Pandas is a powerfull , open source Python Library designed for 
+data manipulation,Analysis and cleaning
 
+Core Data structure:
+    1.Series:
+        A one dimentional labeled array capable of holding 
+        any datatype (int,string etc)
+
+    2.Data Frame:
+        A two dimentional size ,mutable, and potentially hetrogenous
+        tabular data structure with the labeles axes(rows and cols)
 
 
 Essential Features:
@@ -30,4 +38,3 @@ loc:
 
 iloc:
     when we call individual rows with their position
-    
