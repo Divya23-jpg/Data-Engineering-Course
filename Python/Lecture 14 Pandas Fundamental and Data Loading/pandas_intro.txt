@@ -50,7 +50,8 @@ iloc:
 
 To have Exploratory Data Analysis (EDA):
     1.Initial Inspector:
-        Descriptive Analysis, statistical Analysis
+        Descriptive Analysis .info()
+        statistical Analysis .describe()
         .head(),.tail(),.shape
     
     2.Handling Missing value:
@@ -83,4 +84,4 @@ To have Exploratory Data Analysis (EDA):
         Small letter to Capital letter
             EX: df["name"]=df["name"].str.strip().str.title()
 
-        
+    5.
