@@ -53,7 +53,9 @@ I can Create a notebook instead of a .py file is Our Jupyter notebook
 Extension of Jupyter notebook:
 
 .ipynb: Interactive Python notebook 
-    1.Execute a code
+    1.Execute a code: Execute the script which any scripting language
     2.Markdown as a Documentation: README.md 
         md means Markdown
+
+
 
