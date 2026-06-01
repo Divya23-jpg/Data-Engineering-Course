@@ -2,4 +2,28 @@ Numpy Stands for : Numerical Python
     1. Foundational Library for scientific computing.
     2. Provides N-Dimensional array object "ndarray"
     3. ndarray are much faster, more memory efficient than standard python List
-     
+    4. Numpy solves problem of looping which takes more time and memory
+
+
+Key features of Numpy:
+    1.High Performance Library:
+        Numpy does 50 times faster because Numpy array stored in continious memory,allowing the CPU to process compare to python List
+
+    2.Vectorization:
+        It eleminates the need of Explicit "for loop" by applying operations accross entire array at once
+    
+    3.Broadcasting:
+        This allows mathematical operations between array of differnt shapes without manually duplicating the data
+
+    4.Mathematical Tool:
+        Includes built in Mathematical Foundations for linear algebra,fourier Transform,Random number generation
+
+
+
+Common Operation: import numpy as np
+
+1.Creation of array: 
+    np.array(): Convert a list into array of object
+    np.zeroes(): array of all zeroes
+    np.ones(): array of all ones
+    np.arange():
