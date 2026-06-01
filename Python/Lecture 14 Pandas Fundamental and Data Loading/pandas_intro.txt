@@ -45,3 +45,42 @@ loc:
 
 iloc:
     when we call individual rows with their position
+
+
+
+To have Exploratory Data Analysis (EDA):
+    1.Initial Inspector:
+        Descriptive Analysis, statistical Analysis
+        .head(),.tail(),.shape
+    
+    2.Handling Missing value:
+        1.detect Missing value:
+        isnull.sum()
+        .isna()
+
+        2.Drop row/col
+            .dropna
+            
+        3.Data impute
+            .fillna
+
+    3.Remove Duplicate rows:
+        1.Check Duplicates
+        .duplicated().sum()
+
+        2.Remove Duplicate
+        .drop duplicates()
+    
+    4.Fix Data Type and formatting:
+        
+        1.Convert types
+            Ex: df["Age"]=df["Age"].astype(float)
+
+        2.Convert str to date
+            Ex: df["DOB"]=pd.to_datetime(df["DOB"])
+
+        3.Change The  case 
+        Small letter to Capital letter
+            EX: df["name"]=df["name"].str.strip().str.title()
+
+        
