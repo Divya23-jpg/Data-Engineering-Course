@@ -84,5 +84,16 @@ To have Exploratory Data Analysis (EDA):
         Small letter to Capital letter
             EX: df["name"]=df["name"].str.strip().str.title()
 
-    5.Inter Quartile Range
-        Outlier is a anamolys 
+    5.Removing The Outlier:
+    Anamolies in the data
+        IOR method
+        Q1 = First Quater  
+        Q3 = Third  Quater  
+        Lower_bound= Q1 - 1.5 * IQR
+        upper_bound= Q3 + 1.5 * IQR
+
+        Age>=Lower_bound ---|
+        Age<=upper_bound ---|  ACCEPTANCE Range 
+        Other are Outlier
+
+        
