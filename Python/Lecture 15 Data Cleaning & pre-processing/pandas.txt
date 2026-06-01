@@ -1,0 +1,5 @@
+Pandas is used for :
+    1.Data Cleaning
+    2.Data manipulation
+    3.Data Transformation
+    4.Data Imputation
