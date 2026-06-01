@@ -42,3 +42,18 @@ Python Libraries that uses Numpy aray:
     2.Scipy
     3.Matplotlib
     4.Scikitlean
+
+
+Python uses .py extension 
+    Read all Line and interpret line by line then get response
+
+WhenEver I need step by step procedure to Extract information from Each step
+I can Create a notebook instead of a .py file is Our Jupyter notebook
+
+Extension of Jupyter notebook:
+
+.ipynb: Interactive Python notebook 
+    1.Execute a code
+    2.Markdown as a Documentation
+
+    
