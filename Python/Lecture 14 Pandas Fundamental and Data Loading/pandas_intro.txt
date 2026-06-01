@@ -85,4 +85,4 @@ To have Exploratory Data Analysis (EDA):
             EX: df["name"]=df["name"].str.strip().str.title()
 
     5.Inter Quartile Range
-    
+        Outlier is a anamolys 
