@@ -1,0 +1,5 @@
+Numpy Stands for : Numerical Python
+    1. Foundational Library for scientific computing.
+    2. Provides N-Dimensional array object "ndarray"
+    3. ndarray are much faster, more memory efficient than standard python List
+     
