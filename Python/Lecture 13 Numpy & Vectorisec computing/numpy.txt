@@ -54,6 +54,6 @@ Extension of Jupyter notebook:
 
 .ipynb: Interactive Python notebook 
     1.Execute a code
-    2.Markdown as a Documentation
+    2.Markdown as a Documentation: README.md 
+        md means Markdown
 
-    
