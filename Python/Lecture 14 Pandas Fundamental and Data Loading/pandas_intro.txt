@@ -11,6 +11,12 @@ Core Data structure:
         tabular data structure with the labeles axes(rows and cols)
 
 
+Pandas is used for :
+    1.Data Cleaning
+    2.Data manipulation
+    3.Data Transformation
+    4.Data Imputation
+
 Essential Features:
 
 1.Data Input/Output: 
