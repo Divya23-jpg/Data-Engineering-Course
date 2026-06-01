@@ -97,4 +97,11 @@ To have Exploratory Data Analysis (EDA):
         Other are Outlier
 
 
-    6.Catelogical value Encoding
+    6.Categorical value Encoding
+    A,B,C             -> 0,1,2
+    Pass , fail       -> 0,1
+    True , False      -> 0,1
+    OBC , Gen         -> 0,1
+
+    Encoder would be used to encode a Categorical Features to numerical value
+    Ex: One that Encoding
