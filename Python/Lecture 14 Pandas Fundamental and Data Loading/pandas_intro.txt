@@ -84,4 +84,5 @@ To have Exploratory Data Analysis (EDA):
         Small letter to Capital letter
             EX: df["name"]=df["name"].str.strip().str.title()
 
-    5.
+    5.Inter Quartile Range
+    
