@@ -27,3 +27,13 @@ Common Operation: import numpy as np
     np.zeroes(): array of all zeroes
     np.ones(): array of all ones
     np.arange():
+
+2.Slicing / Indexing:
+    similar to Python list  [start:stop:step]
+    It can Extract Sub-section
+
+3.Reshaping: Change the arays Dimentions
+    1D -> 2D
+    .reshape()
+
+    
