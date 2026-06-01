@@ -96,4 +96,5 @@ To have Exploratory Data Analysis (EDA):
         Age<=upper_bound ---|  ACCEPTANCE Range 
         Other are Outlier
 
-        
+
+    6.Catelogical value Encoding
