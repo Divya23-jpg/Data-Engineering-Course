@@ -36,4 +36,9 @@ Common Operation: import numpy as np
     1D -> 2D
     .reshape()
 
-    
+
+Python Libraries that uses Numpy aray:
+    1.Pandas
+    2.Scipy
+    3.Matplotlib
+    4.Scikitlean
