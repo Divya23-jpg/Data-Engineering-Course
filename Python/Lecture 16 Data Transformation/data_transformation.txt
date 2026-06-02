@@ -2,3 +2,13 @@ Data Transformation
 
 1.Type Casting: Change the type of the column 
     Ex: Float into Int
+    df['price']=df['price'].astype('float')
+
+2.Mapping: Replaces the value based on the Dictinory or another seies
+    Ex: df['Status_code']=df['Status'].map({"Y":1,"N":0})
+
+3.Applying Function: Executes a custom Python function along the axis (rows or column) of a DataFrame
+    Method: .apply()
+    EX: df['tax']=df.apply(lambda row: row['name']* 0.15 if row[])
+
+4.Group-Wise Transformation: 
