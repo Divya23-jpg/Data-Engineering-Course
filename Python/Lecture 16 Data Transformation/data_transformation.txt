@@ -11,4 +11,22 @@ Data Transformation
     Method: .apply()
     EX: df['tax']=df.apply(lambda row: row['name']* 0.15 if row[])
 
-4.Group-Wise Transformation: 
+4.Group-Wise Transformation:  Applies an aggregate function (like .mean() ) to group returns a result with same shape as original DataFrame
+    Method: .transform 
+    EX: df['avg_dep_salary']=df.groupby('dept')['salary'].transform('mean')
+
+
+
+Relational Logic:
+    Pandas have few Methods to apply joins,concatenation,mapping,slicing
+
+    1.Mapping: Combine DataFrame on shared keys (column or indexes)
+    Method: .merge() 
+    EX: df_merged=df1.merge(df2,on='employe_id',have='inner Join')
+
+    2.concatenation: Stacks DataFrame vertically by rows or horizontally by column
+    Method: .concat()
+    EX: df_stacked=pd.concat([df1,df2],axis=0)
+
+    3.Filtering & Logic: Two Dimensional Data
+    Method: .loc[] 
