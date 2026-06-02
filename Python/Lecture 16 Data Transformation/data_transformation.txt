@@ -29,4 +29,5 @@ Relational Logic:
     EX: df_stacked=pd.concat([df1,df2],axis=0)
 
     3.Filtering & Logic: Two Dimensional Data
-    Method: .loc[] 
+    Method: .loc[] : Checking based on Labels
+            .iloc[]:Checking based on Indexing
