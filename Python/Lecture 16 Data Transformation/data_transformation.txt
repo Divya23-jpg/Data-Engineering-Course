@@ -1,1 +1,4 @@
 Data Transformation
+
+1.Type Casting: Change the type of the column 
+    Ex: Float into Int
