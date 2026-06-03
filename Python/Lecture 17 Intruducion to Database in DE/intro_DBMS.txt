@@ -21,3 +21,21 @@ Non SQL Database:
 
     High Speed,High Volum,relative application where data structure evolved rapidly
 
+
+
+Data Warehouses:
+
+    Specialize Database optimized for analytics rather than daily Transactional processing. 
+    They Hold Historical and Integrated data from multiple sources
+
+    EX: Snowflake,Google Big Query,Amazon Redshift
+
+    Best For Business Intelligence (BI),reporting and Complex agregation
+
+
+Data Lakes:
+    Massive storage repository that holds raw,unstructured data in its natural Format untill it is needed
+
+    They Do not Enforce any Schemas upon ingestion,offers high flexibility and scale lower cost.
+
+    
