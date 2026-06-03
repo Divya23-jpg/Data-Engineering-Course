@@ -31,7 +31,8 @@ sales=5300.5400.5300,5500,5600,5700,5750,5850,5950,6000,5500
 
 By Simple Linear Regresion model tries to find out the best fit like to predictthe find target
 
-
+Y= stores on target
+x=can store other feature after remaining of target
 model.linearRegression()
 model.fit() -> For train the model
 model.predict()-> For Predict  the model
@@ -41,3 +42,6 @@ model.predict()-> For Predict  the model
 Since, We know our use case is to predict numerical target 
     WE will perform Data Engineering such that we have all the features in the numerical datatype
 
+columns -> Features
+The feature we require to predict is called 
+Rows -> Data Points
