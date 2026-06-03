@@ -13,4 +13,11 @@ EDA [Exploratory data Analysis]:
         Remove data: drop-duplicate()
 
 
-Data Analysis on the basis of Scenerio 
+Data Analysis on the basis of Scenerio :
+1.Numerical Features 
+    The Features(column) which stores data in Numerical 
+
+2.Categorical Features:
+    The Features(column) which stores data in the form of classes
+    EX: [Pass,Fail] , [True,False], [Mail , Female], [Good,Average,best]
+
