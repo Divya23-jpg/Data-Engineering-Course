@@ -18,7 +18,9 @@ Database:
 
 Once Data Engineers collects the data , they can perform 
 ETL:Extract,Transform,Load
+    Require More Computation
 ELT:Extract,Load,Transform
+     Require More Storage
 
 To have analysis and store it back to the Database
 
