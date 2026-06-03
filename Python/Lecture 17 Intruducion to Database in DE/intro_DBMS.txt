@@ -38,4 +38,11 @@ Data Lakes:
 
     They Do not Enforce any Schemas upon ingestion,offers high flexibility and scale lower cost.
 
-    
+    Best for Machine Learning , deep data science,processing the Big data
+    EX: AWS S3
+Data Lakehouse:
+    A Modern , hybrid architecture that combines the reliability and structure of a data Warehouses
+    and scalabilitu and low cost of a data Lakehouse
+
+    Best for unifying analytics and machine Learning on the same storage platform.
+    EX: DataBricks
