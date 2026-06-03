@@ -1,0 +1,23 @@
+Data :
+    XML,PDF,Excel sheet,CSV file,Text file
+
+Database:
+    MongoDB,Postre,MySQL,OracleDB,Redis,Casendra,Neo4Js
+
+Relational Database [RDBMS]:
+    The Database stores data in tables with rows and column,
+    enforcing the strict rules (Schemas) to maintain Relationship and data integrity
+
+SQL TYpe Database
+    The SQL is used for Querying
+    Best for Transactional application where, data  Consistency and ACID properties
+    and critical
+
+    ACID [Atomicity , Consistency, Isolation, Durability]
+
+Non SQL Database:
+    Build to scale horizontally , NoSql Database handle unstructure or semi structure
+    data (Json document,Social media feed) withour requiring predefined Schemas
+
+    High Speed,High Volum,relative application where data structure evolved rapidly
+
