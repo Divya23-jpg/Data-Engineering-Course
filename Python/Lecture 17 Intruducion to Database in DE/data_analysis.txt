@@ -33,4 +33,11 @@ By Simple Linear Regresion model tries to find out the best fit like to predictt
 
 
 model.linearRegression()
-model.fit()
+model.fit() -> For train the model
+model.predict()-> For Predict  the model
+
+
+
+Since, We know our use case is to predict numerical target 
+    WE will perform Data Engineering such that we have all the features in the numerical datatype
+
