@@ -21,3 +21,4 @@ ETL:Extract,Transform,Load
 ELT:Extract,Load,Transform
 
 To have analysis and store it back to the Database
+
