@@ -1,0 +1,23 @@
+Database:
+    Structured , electronically stored collection of data designed for rapid searches,
+    retrivel, and management by application
+
+    DE can interact with multiple forms of data.
+
+
+1.Excel,CSV,TXT,Json
+    Pandas can be used to fetch the data from these sources and have analysis on it
+2.PDF:
+    pypdf: Can be used to read the data in the PDF
+
+3.SQL based Database (RDBMS):
+
+    1.Connect to the Database server
+    2.Fetch the Extract the table
+
+
+Once Data Engineers collects the data , they can perform 
+ETL:Extract,Transform,Load
+ELT:Extract,Load,Transform
+
+To have analysis and store it back to the Database
