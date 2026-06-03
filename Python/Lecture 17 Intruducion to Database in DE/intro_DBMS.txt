@@ -45,4 +45,6 @@ Data Lakehouse:
     and scalabilitu and low cost of a data Lakehouse
 
     Best for unifying analytics and machine Learning on the same storage platform.
-    EX: DataBricks
+    EX: DataBricks , Apache hudi, Apache Iceberg
+
+
