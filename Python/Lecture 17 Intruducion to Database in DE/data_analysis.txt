@@ -26,5 +26,5 @@ Data Analysis on the basis of Scenerio :
 
 Task: To predict the sale in next year on the basis of last 10 year sales
 
-years=2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021
+years=2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021?
 sales=5300.5400.5300,5500,5600,5700,5750,5850,5950,6000,5500
