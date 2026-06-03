@@ -1,0 +1,16 @@
+EDA [Exploratory data Analysis]:
+    1.descriptive Analysis (.info())
+    2.Statistical Analysis (.describe(),.mean())
+    .head(),.tail()
+    3.Check Null Values (Mising Data)
+        .isnull().sum()
+    4.Handles Mising Data
+        Remove data: .dropna()
+        Data Imputation: .fillna()
+    5.Check Duplicates Values
+        .duplicated()
+    6.Handles Duplicates Values
+        Remove data: drop-duplicate()
+
+
+Data Analysis on the basis of Scenerio 
