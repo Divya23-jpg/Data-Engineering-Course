@@ -2,15 +2,61 @@ ORDER BY
 
 Default:Sort everything in ascending ORDER
 
-
-Sorting all column in Department AScending order
-SELECT * FROM Employees 
+Query Example:
+Sorting  depat_id,dept_name,salary
+SELECT depat_id,dept_name,salary FROM Employees 
 ORDER BY department ASC , salary DESC;
 
 
 
 
 2.LIMIT:
-
     Used for Limiting the output
     This is nused in pegination,when we need to have a set of limited values to be shows as output
+     
+    Pagination:     
+    when any Website has a list of multiple entries[ex 1000], developer use the concept of pagination .
+    Ex: Search "Car showroom near me"
+    Google-> 1628 Search value 
+    then it renders 1st 10 result then next page
+
+    
+    Query Example:
+    SELECT * FROM Employees LIMIT(5);
+
+    Restrict the number of rows  returned
+    It is critical for paginationand performance.
+
+    SYNTAX DIFFRENT FOR DIFFERENT DATABASE:
+    Transactional-SQL
+    SELECT TOP(5) * FROM Employees;
+
+    FOR Oracle SQL
+    SELECT * FROM Employees FETCH(5);
+
+
+3.Sacler Functions:
+
+    These Functions which input as a single value [Operates on single value] ascending
+    return the single value.
+
+    THREE MAJOR CATEGORIES:
+
+    1.String Functions:
+        1.CONCAT(str1,str2) : Joins two or more strings together
+        2.SUBSTR(str1,start,length): Extract the subsstring starting at a specific position
+        3.UPPER(str): Convert string to uppercase
+        4.LOWER(str):  Convert string to lowercase
+        5.LEN(str) / length(str): Returns number of characters in a string
+
+    2.Numerical Function:
+        1.ROUND(Number decimal) : Rounds a number to a specified number of decimal place.
+        2.CEICLING(number): Rounds the number upto nearest to integer
+        3.FLOOR(number):Rounds the number down nearest to integer
+        4.ABS(number): Returns absolute (positive) value
+
+    3.Date/Time Functions:
+        1.CURRENT_DATE() / NOW(): Returns current date and system time.
+        2.DATEDIFF(date1,date2): Calculates the time difference btw two dates.
+        3.DATE_ADD(date,Interval value unit): Adds a specified time interval to a date.
+        4.EXTRACT(part from date): Pull a Specific part (YEAR,MOUNTH,HOUR,DAY) out of a timestamp
