@@ -1,0 +1,16 @@
+ORDER BY
+
+Default:Sort everything in ascending ORDER
+
+
+Sorting all column in Department AScending order
+SELECT * FROM Employees 
+ORDER BY department ASC , salary DESC;
+
+
+
+
+2.LIMIT:
+
+    Used for Limiting the output
+    This is nused in pegination,when we need to have a set of limited values to be shows as output
