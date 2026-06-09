@@ -1,4 +1,4 @@
-ORDER BY
+1.ORDER BY
 
 Default:Sort everything in ascending ORDER
 
@@ -60,3 +60,23 @@ ORDER BY department ASC , salary DESC;
         2.DATEDIFF(date1,date2): Calculates the time difference btw two dates.
         3.DATE_ADD(date,Interval value unit): Adds a specified time interval to a date.
         4.EXTRACT(part from date): Pull a Specific part (YEAR,MOUNTH,HOUR,DAY) out of a timestamp
+
+
+
+4. Relationship between tables:
+    defines how a table is connected to another table
+
+    1.One to One (1:1) :
+    Every data element has only single connected value:
+    Ex: Every student has a unique enrollment num.
+    Real Life Ex: Divya 1121 enroll num
+
+    2.One to Many(1:N):
+    One data point can have multiple connected value to it.
+    Ex: Department can have multiple employees in it
+    Real Life Ex: CS Department has 350 professor
+
+
+    3.Many to many(N:M):
+    multiple data points are connected with multiplevalues and vice versa.
+    Ex: Employe can work on multiple project and a project can multiple employees
