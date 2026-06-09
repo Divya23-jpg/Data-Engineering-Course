@@ -80,3 +80,18 @@ ORDER BY department ASC , salary DESC;
     3.Many to many(N:M):
     multiple data points are connected with multiplevalues and vice versa.
     Ex: Employe can work on multiple project and a project can multiple employees
+
+
+
+5.Joins: used to find common element in both the table.
+
+    1.Inner Join: Fetch only the matching value.
+    EX: Employe who have been assigned to a department and the department that has at least one Employe.
+
+    SELECT e.emp_id,e.emp_name,d.dept_name FROM employee e 
+    INNER JOIN department d ON e.dept_id=d.dept_id;
+
+
+    2.Left Join (Outer Join): It keeps all the record from the left table
+    3.Right Join (Outer Join): It keeps all the record from the Right table
+    4.Full (OUTER) Join: It returns everything left and right both
