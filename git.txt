@@ -44,6 +44,9 @@ Requirements for Version Control System:
 2.Host/Website : Github
 
 
-steps: Install Git and Github CLI application in your machine.
+step 1: Install Git and Github CLI application in your machine.
+step 2: pset path
+
+
 
 
