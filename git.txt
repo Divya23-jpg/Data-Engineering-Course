@@ -113,4 +113,18 @@ git push origin main
 
 Rebase:
     git rebase
-    
+
+
+
+Task: 
+    1.Create a local Repo 
+    2.Create two branches , initiating having the same code
+        dev: print("Hello dev")
+        test: print("Hello dev")
+
+    3.Change the code base in "test" branch as
+        test: print("Hello test)
+
+    4.Try to merge it with dev branch
+
+    5.Handle the merge conflict by accepting both the lines in the final codebase
