@@ -40,4 +40,10 @@ Component of Version Control System:
 
 Requirements for Version Control System:
 
-1.
+1.Tool : Git
+2.Host/Website : Github
+
+
+steps: Install Git and Github CLI application in your machine.
+
+
