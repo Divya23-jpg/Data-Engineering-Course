@@ -66,6 +66,8 @@ To ignore all the chnages,files we can mention in a file .gitignore
 
     our .env has some api key available we do not want track
 
+
+
 Branching:
     To check branch and other informtion git.status 
 
