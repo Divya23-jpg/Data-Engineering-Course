@@ -51,3 +51,10 @@ step 2: pset path
 
 Create a new folder/directoy in your machine as a new git repository.
 
+Initiate it at a git repository git Init 
+
+Make changes in the folder. Created a file
+    git status: file has been include
+    git add : file will be added to git to track
+    git commit -m "First-commit": Commit the chnages done in the file
+     
