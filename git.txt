@@ -57,4 +57,7 @@ Make changes in the folder. Created a file
     git status: file has been include
     git add : file will be added to git to track
     git commit -m "First-commit": Commit the chnages done in the file
-     
+
+
+
+Create a new repository to push all the local chnage to it.
