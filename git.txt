@@ -79,3 +79,23 @@ Branching:
 
     3.Only switch to the existing branch 
         git checkout <branch name>
+
+
+
+Merge:
+    1.Create a feature-branch
+        git checkout -b feature branch
+
+    2.update the code Branches
+    
+    3.switch to main branch
+        git checkout main
+        
+        git pull origin main -> updated version of code in main branch
+        
+        git Merge feature-branch->Merge the new feature to the main branch
+        
+        git push origin main-> To push the new feature to the main branch
+
+    
+
