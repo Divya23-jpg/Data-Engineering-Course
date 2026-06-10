@@ -1,0 +1,33 @@
+Version control system
+
+
+VCS in software development and collaboration project used to track and manage
+chnages in the source code
+
+1.Track and records the change in the codebase,maintaining a structured project history
+2.Allow multiple developers to collaborate on the same project with overwritting each other code.
+3.Decelopers can access and update a central repository , where project files one stores.
+4.Enable team to share updates and revert to earlier versions when needed.
+
+
+
+
+
+Component of Version Control System:
+
+1. Repository:
+    Central Location that stores all the project files along with complete tracking history
+    ,metadata like (author or commit message).
+
+
+2.Revision:
+    A specific version of your file or project, which can be identify using a unique ID.
+    such as Hash or number.
+
+
+3.Branches:
+    A separate copy of your codebase used to develop features or fix bugs without affecting the main code.
+
+
+4.Merging:
+    
