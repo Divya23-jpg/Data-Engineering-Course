@@ -76,4 +76,4 @@ Branching:
         git checkout -b <branch name>
 
     3.Only switch to the existing branch 
-        git checkout <branch name>  
+        git checkout <branch name>
