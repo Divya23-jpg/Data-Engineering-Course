@@ -53,4 +53,3 @@ step 5: Make changes in the folder. Created a file
         git commit -m "First-commit": Commit the chnages done in the file
 
 Create a new repository to push all the local chnage to it.
-
