@@ -98,5 +98,8 @@ Merge:
         git push origin main-> To push the new feature to the main branch
 
 
+No merge conflict arises due to no chnage in other main Branch
+
+conflict arrises when multiple people makes chnages in two or more Branches
 
 
