@@ -53,3 +53,27 @@ step 5: Make changes in the folder. Created a file
         git commit -m "First-commit": Commit the chnages done in the file
 
 Create a new repository to push all the local chnage to it.
+Github CLI to link our local repo to the github repository
+    gh auth login
+    gh repo Create
+
+To track all the chnages in the file
+    git add <file.name>
+
+To ignore all the chnages,files we can mention in a file .gitignore
+    .gitignore 
+        .env
+
+    our .env has some api key available we do not want track
+
+Branching:
+    To check branch and other informtion git.status 
+
+    1. To create a new branch
+        git branch <branch name>
+
+    2. To create a new branch and switch to 
+        git checkout -b <branch name>
+
+    3.Only switch to the existing branch 
+        git checkout <branch name>  
