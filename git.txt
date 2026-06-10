@@ -39,26 +39,18 @@ Component of Version Control System:
 
 
 Requirements for Version Control System:
-
-1.Tool : Git
-2.Host/Website : Github
+    1.Tool : Git
+    2.Host/Website : Github
 
 
 step 1: Install Git and Github CLI application in your machine.
-step 2: pset path
-
-
-
-Create a new folder/directoy in your machine as a new git repository.
-
-Initiate it at a git repository git Init 
-
-Make changes in the folder. Created a file
-    git status: file has been include
-    git add : file will be added to git to track
-    git commit -m "First-commit": Commit the chnages done in the file
-
-
+step 2: set path
+step 3: Create a new folder/directoy in your machine as a new git repository.
+step 4: Initiate it at a git repository git Init 
+step 5: Make changes in the folder. Created a file
+        git status: file has been include
+        git add : file will be added to git to track
+        git commit -m "First-commit": Commit the chnages done in the file
 
 Create a new repository to push all the local chnage to it.
 
