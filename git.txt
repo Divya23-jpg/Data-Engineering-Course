@@ -103,3 +103,8 @@ No merge conflict arises due to no chnage in other main Branch
 conflict arrises when multiple people makes chnages in two or more Branches
 
 
+
+git checkout main
+git pull origin  main
+git merge feature-branch
+git push origin main
