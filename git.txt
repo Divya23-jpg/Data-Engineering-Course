@@ -77,3 +77,7 @@ Branching:
 
     3.Only switch to the existing branch 
         git checkout <branch name>
+
+
+
+        
