@@ -49,4 +49,5 @@ step 2: pset path
 
 
 
+Create a new folder/directoy in your machine as a new git repository.
 
