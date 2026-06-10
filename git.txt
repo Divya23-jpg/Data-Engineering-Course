@@ -30,4 +30,12 @@ Component of Version Control System:
 
 
 4.Merging:
-    
+    The process of combining one branch feature into another by resolving conflicts if needed.
+
+
+5.Commit:
+    A snapshot of your codebase at a specific interval or time which is used to track 
+    and manage project history.
+
+
+
