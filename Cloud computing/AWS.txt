@@ -74,4 +74,12 @@ How this manages or controls?
     like read , write Permission
 
 
+By Default when you login to your personal AWS console you are logged in as "root" user 
+    All access, all Permission 
+
+Best Practice : Create a new user which follows the principle of least preveliege
+    Provides only the required Permission to perform a task.
+    Multi-Factor Authentication.
+    IAM Role, Iam Identity center can be used for 
+
 1.Role Based 
