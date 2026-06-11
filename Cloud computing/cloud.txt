@@ -23,9 +23,9 @@ Types of service in amy cloud service providers:
 
 
 3.Saas[Software as a Service]:
-
+    It delivers fully functional,ready to use software Application over the internet
     Readymade software only User have to use only.
-    Example: Google Docx,Gmail,Driver
+    Example: Google Docx,Gmail,Driver,Microsoft 365, Zoom, Salesforce
 
 
 
