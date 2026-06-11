@@ -61,4 +61,17 @@ Services in Aws
 
 
 IAM  [Identity Acces managment]:
+    It Controls Authentication [Who r u?]
+    It Controls Authorization [What r u allow to do??]
 
+How this manages or controls?
+    Create IAM User + IAM Groups + IAM Role + IAM Policies
+    
+    IAM User: Identity of a person like [provides username and password]
+    IAM Group: Permission to his own group like [Iam User assigns developer group]
+    Iam Role : Entities name 
+    IAM  Policies : Permission are given or denied to the user according to his role or group
+    like read , write Permission
+
+
+1.Role Based 
