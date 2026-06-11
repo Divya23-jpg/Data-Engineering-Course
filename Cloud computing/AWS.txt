@@ -1,0 +1,26 @@
+Cloud service providers:
+
+1.Amazon web services [AWS]:
+     Most no of services
+2.Google cloud providers :
+    Most no of services
+3.Microsoft Azure   :
+     cost Efficient
+
+Services in Aws
+
+1.It works pay as you go model
+2.Flexible scalling options
+
+Regions: Physical locations worldwide where AWS clusters data center
+    Example: us-east-1 (Northern part of virgenia)
+             ap-south-1(Mumbia)
+             
+    Optimize latency by chosing regions close to users.
+
+
+Availaibality Zones (AZ):
+    Multiple isolated location within each region
+    Each AZ contains one or more descrete data centers.
+    Ensures High Availaibality(HA) and disaster recovery(DA).
+    Prevents single point of failure.
