@@ -1,0 +1,31 @@
+Types of service in amy cloud service providers:
+
+1.Iaas [Infrastruture as a Service]:
+    Cloud service providers take care of servers, storage,networking etc.
+    User will responsible for managing Application,OS,data
+
+    Cloud manges:1.storage   4.Servers                     
+                 2.Network   5.Virtualization                    
+                 3.Hardware                              
+    
+        
+    User Manages:1.Application  4.Runtime
+                 2. OS          5.Middleware
+                 3. Data
+    Example: EC2, Azure Virtual machine
+
+
+
+2.paas [Platform as a Service]:
+
+    Pass offers complete, managed cloud environment specifically designs for Developing,testing and managing.
+    Example: Cloud fair, herako,Google app Engine, Aws Elastic Beanstock,Microsoft Azure App,Render
+
+
+3.Saas[Software as a Service]:
+
+    Readymade software only User have to use only.
+    Example: Google Docx,Gmail,Driver
+
+
+
