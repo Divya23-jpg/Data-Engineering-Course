@@ -14,7 +14,8 @@ AWS[Amazon Web services]:
 1.It works pay as you go model
 2.Flexible scalling options
 
-1.Regions: Physical locations worldwide where AWS clusters data center
+1.Regions:   Geographical Physical Region  locations worldwide where AWS clusters data center.
+          
     Example: us-east-1 (Northern part of virgenia)
              ap-south-1(Mumbia)
              
@@ -22,6 +23,7 @@ AWS[Amazon Web services]:
 
 
 2.Availaibality Zones (AZ):
+    Inside a region, availability zones where actual data are present 
     Multiple isolated location within each region
     Each AZ contains one or more descrete data centers.
     Ensures High Availaibality(HA) and disaster recovery(DA).
@@ -83,3 +85,69 @@ Best Practice : Create a new user which follows the principle of least prevelieg
     IAM Role, Iam Identity center can be used for 
 
 1.Role Based 
+
+
+AWS S3
+Amazon Web Service simple  storage service (S3)
+    1.It is  a scalable object storage service used to store and retrive data from abywhere on the internet.
+    2.It stores data as an object inside a bucket and supports virtually unlimited storage capacity. with high durability,
+    security and Availaibality.
+    3.Amazon S3 also provides multiple storage classes to optimise cost based on data acces pattern.
+
+
+Core Architecture/ Function availabile 
+
+    1.S3 Utilizer a flat, non-hierarical Architecture that allows servixe to scale virtually.
+      Scale virtually infinitely.
+
+2. The fundamental building blocks are logical continious and the data units stored within them.
+        
+    1.Bucket: A container for objects which has the following characteristics
+       1. Global namespace: Every bucket names must be unique value across all the AWS Account worldwide(Like DNA name).
+
+       2.Region spacific: You create a bucket in a specific region (US-east-1) and your data 
+       never leaves that region unless you explicitely move it.
+
+    2.Objects: The fundamental entity stored in S3 , consisting of :
+        1.Key: The name of the object [image.jpg]
+        2.Value: The data itsel [bytes]
+        3.Metadata: name-value pairs describes the object [Content-type : image/jpg]
+        4.size: Objects can range from 0 bytes  upto 5 Terabyte 
+
+
+
+S3 storage Class/ Types of storage:
+    S3 offers 7 storage classes designed for different access pattern and cost
+    Each class has distinct pricing, retrival times and use case.
+
+ Storage Class           Access Frequency      Availaibality Zone    monthly cost(gigabyte)   use case
+
+1.S3 standard              Frequent                    >=3               $0.023 (50 TB)          General Purpose storage,Static websites,cloud Apps which are accessed Frequently
+2.S3 Intelligent Tiering   Unknown/ Keep changing      >=3               variable costing        Data with unpredictable access patterns,Automatically moves tiers to save the cost without any retrival
+3.S3 Intelligent IA        Infrequent                  >=3               $0.0125                 Long lived data accesed less than once a month.EX: Backup,Desaster recovery.Minimum 30 days storage
+4.S3 One Zone IA           Infrequent                   1                $0.01                   Non Cretical ,reproducable data [EX: secondary Backup],Cheaper but less durable.Minimum 30 days storage
+5.S3 Glacier Instant       Rare                        >=3               $0.004                  Archieves needing milliseconds access [Ex: medical records, compliance data].Minimum 90 days storage
+Retreival
+6.S3 Glacier Flexible      Rare[Yearly]                 >=3              $0.0036                 Archives where retrival time of minutesd to 12 hr acceptable.10% cheaper then instant - Minimum 90 days storage
+Retreival
+
+7.S3 Glacier Deep           Very Rare                   >=3             $0.00099                 Long term retension [7 - 10 years] for compliance . lower cost retrival in 12 hr .minimum 180 days storage
+Archieve 
+
+
+
+
+
+
+AWS CLI
+
+
+Key Features :
+
+1.Data Consistency
+2.S3 Versioning 
+3.S3 Lifecycle managment
+4.Security and Access control (ACL)
+5.Encryption : Server side Encryption (SSE),Key management system
+
+
