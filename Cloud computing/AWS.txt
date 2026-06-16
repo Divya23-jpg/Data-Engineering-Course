@@ -141,7 +141,6 @@ Archieve
 
 AWS CLI
 
-
 Key Features :
 
 1.Data Consistency
@@ -151,3 +150,34 @@ Key Features :
 5.Encryption : Server side Encryption (SSE),Key management system
 
 
+AWS compute services
+It provides the processing power, memory and networking required to run application in the cloud
+Instead of maintaining physical server, you can scale resources pn the demand and pay only for what you use.
+
+Types of Compute services:
+1 Virtual Servers & instances
+    1.Amazon EC2 [Elastic Compute Cloud] :
+    provoides Virtual servers [instances] in the cloud , offers granular control over
+    your OS, CPU,memory and storage.
+
+    2. Amazon Lightsail: An easy to use Virtual Private server [VPS] option that bundles compute , 
+    storage and networking for simple workloads and websites  at a predictable , low monthly price.
+
+
+2.serverless & Event- Driven:
+    1.AWS lambda: A server compute service that runs your code and response  
+    to an event and it Automatically manages the underlying compute resources.
+
+    2.AWS Elastic Beanstolk: It is an Example of Platform as a service that handles the deployment and management od app without
+    any needing to manage     the underlying infrastructure
+
+3. Container based compute service:
+    1. Amazon ECS: A highlt secure and scalable fully managed container orchestration services that makes it easy to run , stop and manage
+    docker containers.
+
+    2.Amazon EKS: A manage kubernetes service that allows you to run kubernetes on AWS
+     
+
+AWS database Services
+
+AWS offers a 
