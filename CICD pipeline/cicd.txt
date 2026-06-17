@@ -1,0 +1,25 @@
+Version Control System
+    git: VCS
+    gihub (gh): platform [repositories]
+        gihub CLI
+            gh repo create
+
+
+
+2.Automated workflow:
+    Github Actions/Jenkins can be used to create an automated pipeline which can test , build or maintain the codebase 
+    quality
+
+
+
+
+What perform in software engineering
+    Test:
+        Automated Test
+        unit Test
+        Integration Test
+    
+    Build:
+        Application 
+
+
