@@ -39,4 +39,9 @@ Create a folder .Github
                 craete a file "ci.yml"
 
 
-            
+For creating automated pipeline 
+Continious Integration:
+    takes care of Integration of new code without hiding the previos code
+
+Continious Deployement: 
+    takes care of automatically Deploy the Application with the new features added
