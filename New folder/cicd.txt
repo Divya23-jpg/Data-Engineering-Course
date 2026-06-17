@@ -1,0 +1,9 @@
+Version Control System
+    git: VCS
+    gihub (gh): platform [repositories]
+        gihub CLI
+            gh repo create
+
+
+
+2.Automated workflow
