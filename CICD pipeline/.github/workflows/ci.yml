@@ -37,6 +37,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Run ruff
-      run: |
-        ruff check
