@@ -23,3 +23,10 @@ What perform in software engineering
         Application 
 
 
+Craete  a pipeline which runs these test automatically whenever someone pushes the code.
+
+Test:
+    create and activate env in a python terminal
+    install ruff and pytest
+    ruff check: 
+    ruff format:
