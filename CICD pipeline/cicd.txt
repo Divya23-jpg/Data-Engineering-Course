@@ -31,12 +31,6 @@ Test:
     ruff check: 
     ruff format:
 
-For Automated workflows using Github Actions
-Create a folder .Github
-        cd .github
-            Create  a folder "workflows"
-            cd . workflows
-                craete a file "ci.yml"
 
 
 For creating automated pipeline 
@@ -45,3 +39,22 @@ Continious Integration:
 
 Continious Deployement: 
     takes care of automatically Deploy the Application with the new features added
+
+
+
+For Automated workflows using Github Actions
+Create a folder .Github
+        cd .github
+            Create  a folder "workflows"
+            cd . workflows
+                craete a file "ci.yml"
+
+
+Create a yml file at .github/workflows location.
+configure it to have a trigger
+    on "push" [main]
+    "pull request" [main]
+
+
+push the yml file.
+you automated workflow would be trigger at every push
