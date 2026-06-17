@@ -30,3 +30,13 @@ Test:
     install ruff and pytest
     ruff check: 
     ruff format:
+
+For Automated workflows using Github Actions
+Create a folder .Github
+        cd .github
+            Create  a folder "workflows"
+            cd . workflows
+                craete a file "ci.yml"
+
+
+            
