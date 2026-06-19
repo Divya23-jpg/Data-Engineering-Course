@@ -47,19 +47,39 @@ step 1: Install Git and Github CLI application in your machine.
     for check version: git --version and gh --version
 step 2: set path
 step 3: Create a new folder/directoy in your machine as a new git repository.
-step 4: Initiate it at a git repository :git Init 
+step 4: Initiate it at a git repository :git init 
 step 5: Make changes in the folder. Created a file
-        git status: file has been include
-        git add : file will be added to git to track
-        git commit -m "First-commit": Commit the chnages done in the file
+        
+    
+
+
+Commands:
 
 Create a new repository to push all the local chnage to it.
+To Create a new repository
+    gh repo create my-repo-name
+
 Github CLI to link our local repo to the github repository
     gh auth login
-    gh repo Create
+  
 
 To track all the chnages in the file
+    git status
+
+To add file
     git add <file.name>
+
+To add all file:
+    git add .
+
+To commit chnages:
+    git commit -m "First-commit"
+
+To push to Github
+    git push -u origin main
+
+To check log
+    git log
 
 To ignore all the chnages,files we can mention in a file .gitignore
     .gitignore 
