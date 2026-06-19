@@ -2,11 +2,11 @@ Version control system
 
 
 VCS in software development and collaboration project used to track and manage
-chnages in the source code
+changes in the source code
 
 1.Track and records the change in the codebase,maintaining a structured project history
 2.Allow multiple developers to collaborate on the same project with overwritting each other code.
-3.Decelopers can access and update a central repository , where project files one stores.
+3.Developers can access and update a central repository , where project files one stores.
 4.Enable team to share updates and revert to earlier versions when needed.
 
 
@@ -27,7 +27,7 @@ Component of Version Control System:
 
 3.Branches:
     A separate copy of your codebase used to develop features or fix bugs without affecting the main code.
-
+    1.Main/Master branch available by default
 
 4.Merging:
     The process of combining one branch feature into another by resolving conflicts if needed.
@@ -44,9 +44,10 @@ Requirements for Version Control System:
 
 
 step 1: Install Git and Github CLI application in your machine.
+    for check version: git --version and gh --version
 step 2: set path
 step 3: Create a new folder/directoy in your machine as a new git repository.
-step 4: Initiate it at a git repository git Init 
+step 4: Initiate it at a git repository :git Init 
 step 5: Make changes in the folder. Created a file
         git status: file has been include
         git add : file will be added to git to track
