@@ -62,7 +62,6 @@ To Create a new repository
 Github CLI to link our local repo to the github repository
     gh auth login
   
-
 To track all the chnages in the file
     git status
 
@@ -90,33 +89,41 @@ To ignore all the chnages,files we can mention in a file .gitignore
 
 
 Branching:
-    To check branch and other informtion git.status 
+    1.To check branch and other informtion
+         git.status 
 
-    1. To create a new branch
+    2. To create a new branch
         git branch <branch name>
+        Ex: git branch Test
 
-    2. To create a new branch and switch to 
+    3. To create a new branch and switch to 
         git checkout -b <branch name>
+        Ex: git checkout -b Test
 
-    3.Only switch to the existing branch 
+    4.Only switch to the existing branch 
         git checkout <branch name>
-
-
+        git checkout Test
+    
+    5.To Delete a branch
+        git branch -d <branch name>
+        Ex: git branch -d test
 
 Merge:
-    1.Create a feature-branch
+    1.Create a branch & switch on that branch name feature
         git checkout -b feature branch
-
-    2.update the code Branches
     
-    3.switch to main branch
+    2.switch to main branch
         git checkout main
-        
-        git pull origin main -> updated version of code in main branch
-        
-        git Merge feature-branch->Merge the new feature to the main branch
-        
-        git push origin main-> To push the new feature to the main branch
+      
+    3.updated version of code in main branch  
+        git pull origin main 
+
+    4.Merge the new feature to the main branch
+        git Merge feature-branch
+        It added all code in branch "main" which we written in the branch named "feature"
+    
+    5.To push the new feature to the main branch
+        git push origin main
 
 
 No merge conflict arises due to no chnage in other main Branch
@@ -125,13 +132,8 @@ conflict arrises when multiple people makes chnages in two or more Branches
 
 
 
-git checkout main
-git pull origin  main
-git merge feature-branch
-git push origin main
-
-
 Rebase:
+It  makes our commit track  in the linaer way
     git rebase
 
 
