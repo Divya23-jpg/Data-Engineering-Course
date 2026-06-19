@@ -23,25 +23,25 @@ AWS[Amazon Web services]:
 
 
 2.Availaibality Zones (AZ):
-    Inside a region, availability zones where actual data are present 
-    Multiple isolated location within each region
-    Each AZ contains one or more descrete data centers.
-    Ensures High Availaibality(HA) and disaster recovery(DA).
+    1.Inside a region, availability zones where actual data are present.
+    2.Multiple isolated location within each region.
+    3.Each AZ contains one or more descrete data centers.
+    4.Ensures High Availaibality(HA) and disaster recovery(DA).
     Prevents single point of failure.
 
 
 
 3.Edge location: 
-    Smaller data center in major cities worldwide.
-    Used to cache content closer to the end user with the help of AWS cloud fund(CDN)
-    Reduces the Latency and provide faster content deliver.
+    1.Smaller data center in major cities worldwide.
+    2.Used to cache content closer to the end user with the help of AWS cloud fund(CDN)
+    3.Reduces the Latency and provide faster content deliver.
 
 
 Services in Aws
 
 1.Compute: Amazon EC2 [Elastic Compute Cloud] 
            AWS lambda for serverless 
-            AWS Elastic Beanstolk 
+           AWS Elastic Beanstolk 
 
 
 2.storage: Amazon S3 [Simple storage service]
