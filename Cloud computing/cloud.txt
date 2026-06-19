@@ -1,3 +1,13 @@
+Cloud Computing:
+    It is a way of building,scaling technology without owning physical infrastructure, accesing
+    Computing resources over the internet on demand..
+
+Cloud Sevice Provider:
+    They rents [provision] the resources according to the need and changes on the basis of duration 
+    these services used.
+
+
+
 Types of service in amy cloud service providers:
 
 1.Iaas [Infrastruture as a Service]:
@@ -12,8 +22,8 @@ Types of service in amy cloud service providers:
     User Manages:1.Application  4.Runtime
                  2. OS          5.Middleware
                  3. Data
+    
     Example: EC2, Azure Virtual machine
-
 
 
 2.paas [Platform as a Service]:
