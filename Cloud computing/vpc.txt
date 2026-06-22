@@ -1,0 +1,42 @@
+Virtual Private Cloud
+
+An Amazon Virtual Private Cloud [VPC] is  a logically isolated , private network space within AWS cloud 
+where You can securely launch and manage your resources.
+
+It function axactly like a traditional data center network  but we have scalability,flexibility , cost effiency of AWS .
+
+
+Core component:
+
+1.Subnets:  
+    Ranges of IP address within your VPC that sits inside a specific availability
+    zone (AZ). They diclare where your resources reside:-
+        public Subnets: Connect to the internet via an internet Gateway . idea for web server.
+        Private Subnet: Not directly Connected to the public internet. used for backend databases or application server.
+
+
+2.Route Table:
+    A set rules (routes) used to determine where network traffic is directed.
+
+3.Gateway:
+    component which Connected your VPC to the outside world.An internet Gateway enables the internet
+    access , while NAT Gateway lets the resources in private Subnet securely accessthe internet for updates without allowing the incoming traffic.
+
+
+
+
+Securely & Connectivity :
+
+1.Securely Groups:
+    Act as a Virtual firewall for individual resources [like Ec2 instances], controlling both inbound and 
+    outbound traffic. They are statefull.
+
+2.Network Access Control lists [NACLs]:
+    Virtual firewall that act at the Subnet
+    level to control the traffic going in and out.They are stateless.
+
+3.VPC Endpoints:
+    Allows you private resources to connect to other AWS service [like Amazon s#, or DynamoDB] over the internet  AWS network, completly by passing thr public internet.
+
+4.VPC Peering : 
+    A direct networking Connection that allows you to route traffic between different PCs
