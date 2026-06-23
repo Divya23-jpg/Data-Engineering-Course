@@ -24,4 +24,4 @@ Task:
     1.Create a AWS Ec2 instance launch template
 
         Template name: My Template
-        Amazon Machine image (AMI): 
+        Amazon Machine image (AMI):
