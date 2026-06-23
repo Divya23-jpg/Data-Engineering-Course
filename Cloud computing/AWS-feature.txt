@@ -1,0 +1,4 @@
+Scaling and Highly availability
+
+Scaling:
+    It refers to the ability to adapt to increase work
