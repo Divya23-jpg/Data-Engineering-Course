@@ -2,3 +2,26 @@ Scaling and Highly availability
 
 Scaling:
     It refers to the ability to adapt to increase work 
+
+    1.Horizontal Scaling:
+        Adding more instances  or resources to your 
+
+
+
+
+
+Managed & Serverless scaling:
+    Services that natively and elastically adopt to the load with no manual intervention
+    EX: AWS lambda
+    It automatically scales function execution horizontally in the realtime , matching the event volume  from zero
+
+
+
+In AWS scalability allows your system to handle the growth by increasing the compute , memory or storage . 
+
+
+Task:
+    1.Create a AWS Ec2 instance launch template
+
+        Template name: My Template
+        Amazon Machine image (AMI): 
