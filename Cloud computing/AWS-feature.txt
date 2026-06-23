@@ -24,4 +24,11 @@ Task:
     1.Create a AWS Ec2 instance launch template
 
         Template name: My Template
-        Amazon Machine image (AMI):
+        Amazon Machine image (AMI):Amazon linux 2
+        Ibstance Type: t2.micro
+        key pair & security Groups
+
+    2.Create Autoscalling Groups(ASG)
+    1.choose the launch Template {My Template}
+    2.choose instance in the launch template VPC,AZ,Subnet
+    3.Configure advance option [optional]
