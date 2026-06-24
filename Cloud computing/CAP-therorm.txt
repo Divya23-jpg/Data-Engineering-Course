@@ -10,3 +10,8 @@ In ACID , It refers to the fact that a transaction will not violate the integret
 
 
 The CAP theorm 
+
+
+1.CA [Consistency and Avaialability]:
+    These types of system always accepts the request to view or modify the data sent by the user
+    and they are always responded with the data which is Consistent among all the databases nodes of a big distributed network.
