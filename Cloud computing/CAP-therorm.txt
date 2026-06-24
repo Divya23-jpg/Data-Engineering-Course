@@ -16,4 +16,9 @@ The CAP theorm
     These types of system always accepts the request to view or modify the data sent by the user
     and they are always responded with the data which is Consistent among all the databases nodes of a big distributed network.
 
-    
+    The combination of Consistency and availability is not possible in distributed system and for advicing CA,
+    the system has to be monolitic such that when a user updatedes the state of the system, all other user accesing it are allowsnotified about 
+    the new changes . which means Consistency is maintained. And save it follows monolitic arcitecture , all  user are connected to a single system which means it is also available.
+
+
+    These types of 
