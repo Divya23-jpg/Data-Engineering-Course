@@ -32,3 +32,22 @@ Task:
     1.choose the launch Template {My Template}
     2.choose instance in the launch template VPC,AZ,Subnet
     3.Configure advance option [optional]
+
+
+
+    High availability:
+
+        High availability prevents system outages by building fault tpolarece and redundancy into the infrastructure
+
+        1.Multi availability zone deployment:
+            You should deploy your resources [EC2 , databases] accross at least two different availability zones.
+            If one AZ experience a power outage or ntural disaster, the other remains online
+
+        2.Elastic Load Balancing (ELB):
+            Works  hand in hand with Autoscalling feature to automatically distribute the incoming traffic accross  multiple EC2 instances.
+            ,routing request to only our healthy target.
+
+        3.Multi-Region deployment:
+            For maximum availability,application can be deploy globally accross multiple AWS regions [Using services like Amazon Route S3 for DNS routing], allowing for 
+            disaster recovery and extency 
+

@@ -1,0 +1,12 @@
+In ACID , It refers to the fact that a transaction will not violate the integrety constrain
+
+
+
+2.Availability:
+    Avaialability means each read or write request for a data item will either be proccessed successfully or willreceive a message that the
+    operation cannot be completed
+
+
+
+
+The CAP theorm 
