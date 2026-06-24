@@ -22,3 +22,5 @@ The CAP theorm
 
 
     These types of 
+
+    
