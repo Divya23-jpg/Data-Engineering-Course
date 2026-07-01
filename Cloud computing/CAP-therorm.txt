@@ -35,4 +35,5 @@ NOTE: The concept of Consistency  ACID and CAP are slightly different since in
     the new changes . which means Consistency is maintained. And save it follows monolitic arcitecture , all  user are connected to a single system which means it is also available.
 
 
+
     These types of 
