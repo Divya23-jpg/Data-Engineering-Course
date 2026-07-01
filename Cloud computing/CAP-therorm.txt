@@ -1,5 +1,6 @@
-In ACID , It refers to the fact that a transaction will not violate the integrety constrain
 
+
+In ACID , It refers to the fact that a transaction will not violate the integrety constrain
 
 
 2.Availability:
@@ -11,7 +12,20 @@ In ACID , It refers to the fact that a transaction will not violate the integret
 
 The CAP theorm 
 
+The CAP Theorm is a key idea in distributed systems that explains why building a perfect reliable , networked data system is imposible.
 
+Proposed by Eric Brwer and proven by Seth Gilbert and along with nancy lynch.
+It states that a distributed system cannot guarantee Consistency , Avaialability,and Partition tolerance all at the same tine.
+, and it can fully achieve any two (maximum) at a time  
+
+
+Properties of CAP:
+    1.Consistency: Consistency means all the nodes (databases) inside a network will have the same copies of a replicated data item visible for various transaction.
+                   it guarantees that every node in a distributed cluster remains the same , most rescent and succesfull write.
+                   Every client having same view of the data                
+
+
+NOTE: The concept of Consistency  ACID and CAP are slightly different since in 
 1.CA [Consistency and Avaialability]:
     These types of system always accepts the request to view or modify the data sent by the user
     and they are always responded with the data which is Consistent among all the databases nodes of a big distributed network.
