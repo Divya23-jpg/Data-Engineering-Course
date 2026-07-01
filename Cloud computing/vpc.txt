@@ -3,7 +3,7 @@ Virtual Private Cloud
 An Amazon Virtual Private Cloud [VPC] is  a logically isolated , private network space within AWS cloud 
 where You can securely launch and manage your resources.
 
-It function axactly like a traditional data center network  but we have scalability,flexibility , cost effiency of AWS .
+It function exactly like a traditional data center network  but we have scalability,flexibility , cost effiency of AWS .
 
 
 Core component:
