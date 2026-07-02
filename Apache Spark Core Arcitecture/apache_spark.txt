@@ -33,4 +33,28 @@ Execution Hierarchy:
 3.Stage of JOB  [Every job has multiple stage]: A collection of tasks that can run in parallel. stages are divided at shuffle boundaries where data must be repartitioned accross the nodes.
 4.Task [Every stage has multiple Task]: The smallest structural unit of work.each individual task proccesses exactly one data partition on a single thread inside an executor.
 
+
 The Execution Workflow:
+
+when we submit a script of Apache spark, the following engine proccesses your code using the following lifecycle:
+
+1.Initialization:
+    Your code starts the Driver and initiates a sparksession.
+
+2.Resource Negotiation:
+    The Driver connects to cluster Mnaager to request resources containers on workers nodes. 
+    The manager launches  Executors in response.
+
+3.Logical Planning & Optimization: 
+    Transformation (like .filter()) use lazy evaluation,they are not executed immediately.instead they build a logical plan optimized by sparks built in catalyst optimizer.
+
+4.DAG Creation:
+    When an Action is called , the plan converts  into a Directed Acyclic Graph [DAG]  
+    The DAG Scgedular breaks this Graph into execution stages and Physical tasks.
+
+
+5.Task Lanching:
+    The task scheduler distributes tasks to specific executes based on data locality.
+
+6.collection:
+    Execution processes data partition in memory ,exchange intermidiate data if shuffle is required , and stream final result back to the driver.
