@@ -58,3 +58,6 @@ when we submit a script of Apache spark, the following engine proccesses your co
 
 6.collection:
     Execution processes data partition in memory ,exchange intermidiate data if shuffle is required , and stream final result back to the driver.
+
+
+    
