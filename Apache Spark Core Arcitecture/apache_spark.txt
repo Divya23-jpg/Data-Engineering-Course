@@ -2,3 +2,31 @@ Apache Spark uses a master slave [driver-executor] architecture to coordinate di
 It relies on a central coordinator called the Driver. and multiple distributed workers are called Executors, which are connected via an external cluster Manager.
 
 
+Core Architecture Components:
+
+The Apache Spark cluster mode relies on 4 critical Components:
+
+1.Driver Program:
+    The master node and "Brain of the application". 
+    It executes the main()  function, craetes the spark Session,translates user code into logical plans and schedules the task.
+
+2.Cluster manager:
+    An external service that aalocates physical resources [CPU & Memory ] accross the application.
+    Supported Manager includes spark standalone,Hadoop YARN,Kubernetes and Apache Mesos.
+
+
+3.Worker Node:
+    Physical or virtual machine in the cluster that host the execution process.
+
+4.Executors:
+    Long lives Java Virtual Machine [JVM] process running on worker nodes.They are responsible for executing the individual tasks and caching data 
+    in Memory or disk.
+
+
+
+Execution Hierarchy:
+    Spark breaks down data processing into a specific Hierarchy to scale task efficiently.
+
+
+1.Application: The entire program submitted to clusters.
+2.Job        : The highest  elements of execution, triggered exclusively 
