@@ -1,0 +1,4 @@
+Apache Spark uses a master slave [driver-executor] architecture to coordinate distributed data processing accross a cluster of machines.
+It relies on a central coordinator called the Driver. and multiple distributed workers are called Executors, which are connected via an external cluster Manager.
+
+
