@@ -29,4 +29,8 @@ Execution Hierarchy:
 
 
 1.Application: The entire program submitted to clusters.
-2.Job        : The highest  elements of execution, triggered exclusively 
+2.Job        : The highest  elements of execution, triggered exclusively when an Action [.count() , .collect()] is called Job.
+3.Stage of JOB  [Every job has multiple stage]: A collection of tasks that can run in parallel. stages are divided at shuffle boundaries where data must be repartitioned accross the nodes.
+4.Task [Every stage has multiple Task]: The smallest structural unit of work.each individual task proccesses exactly one data partition on a single thread inside an executor.
+
+The Execution Workflow:
