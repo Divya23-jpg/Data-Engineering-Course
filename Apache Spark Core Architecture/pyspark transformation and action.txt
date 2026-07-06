@@ -1,0 +1,63 @@
+.select()
+.filter()
+.groubBy()
+.join()
+.withColumn()
+.show()
+.Count()
+.collect()
+.first()
+.write()
+
+
+Transformation                              Action
+
+.select()                                   .show()  withColumn() describe.show() write() first()
+.filter()                                   .count()
+.groubBy()
+.join()
+
+Transformation creates the execution plan     Action forces data preproccesing
+
+
+In PySpark , operation on Distributed Datasets [RDD and Dataframes] are aplit into two main categories: Transformation and Action
+
+The fundamental differenece lies in how they are executed. PySpark uses lazy Evaluation,meaning Transformation does not compute the results 
+immediately. Instead they build a logical execution plan [Directed Acyclic Graph or DAG].The Computation only triggers when an Action is called .
+
+
+1.PySpark Transformations
+
+Transformations create a new Datasets from an existing one.
+Because of lazy Evaluation , they do not modify the original data or immediately compute the results.
+
+Two Type of Transformation:
+1.Narrow Transformation:
+    Data required to compute a single partition resies in a single partition of a parent RDD/Dataframes.
+    No data movement accross the network [Shufling ] is required .
+    
+    .filter()/ .when(): Filter rows based on a given condition
+    .select(): 
+    .map()/flatmap(): Apply a  function to each element. map() returns one element per input
+                        While flatmap() can returns multiple elements
+
+
+2.Wide Transformation:
+    Data required to compute a single partition may reside in multiple partition of the parent RDD/Dataframes.
+    This requirs a Shufle,while moves the data accross the network and is performance heavy.
+
+    .groubBy()
+    .join()
+    .distinct(): remove the duplicate rows
+    .orderBy()/sort()
+
+PySpark Actions:
+    Action trigger the actual Computation of the execution plan build by the Transformations. They are executes the DAG 
+    and either returns a value to the driver program or write data to a storage.
+
+    .show()
+    .collect(): return entire Datasets to the driver program
+    .count()
+    .first()/.head()
+    .take(n): Returns the first n rows as a local list
+    .write(): Saves the Dataframes content 
