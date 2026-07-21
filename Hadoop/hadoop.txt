@@ -1,0 +1,54 @@
+Apache Hadoop:
+    Distributed System
+
+
+Tool like:
+    Spark: data processing
+    YARN: Resource allocator
+    Map Reduce: Map:
+                    Spliting in key value pair 
+                Reducing:
+
+
+
+
+
+Pyspark:
+    can be used for data partitioning 
+
+    Data partitioning refers to process of dividing a large dataset into smaller chunksor partition,
+    which can be process concurrently.
+    It allows large dataset to be processed more efficiently by diciding the workloads among different 
+    multiple machines or processors.
+
+
+Advantage of Data partitioning:
+
+    1.Improves the performance: Memory , compute
+    2.Scalability: Horizontal scale is implented via partition.
+    3.Improve Fault Tolerance: It prevents the data due to 
+    4.data organization: EX Time series data would be more organised .
+                         EX Location  
+
+
+Methods of data partitioning using Pyspark
+
+1.Hash partitioning 
+
+    1.It is a default partitioning method in pyspark.
+
+    2.It works by assigning a unique hash value to each record based on a  special column and then placing the record in the corresponding partition.
+
+    3.This ensures that record with the same value for a specified column are placed in the same partition.
+
+2.Range partitioning
+    WE divide the whole data into smaller partition based on range of values for a specific column 
+    EX: Time Series data, partitioning can be done on the basis of date as a feature for the partition criteria.
+
+
+3.Using .partitionBy method 
+    This method Splits a Pyspark  dataframe into smaller ,more
+    managable partition based on value in one or more colums.
+
+    This method takes one or more column names as input argument 
+    and returns a new dataframe that 
