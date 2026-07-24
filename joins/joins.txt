@@ -1,0 +1,53 @@
+1.Inner join
+2.Outer join
+    Left join
+    Right join
+3.Full Outer join
+4.Cross join
+
+SPECIAL JOIN IN Pyspark
+5.Semi Join
+6.Anti join
+
+
+
+
+
+
+1.Inner join:
+    Combines rows from two data type when matching key Exists in Both of them
+
+    Rows Without the matching key will be excluded .This is the default in Pyspark
+
+    Vein diagram:
+        Common In Both A and Both
+
+
+2.Outer Join:
+    Pyspark support left, right,and full outer join
+
+    Left join:
+        It returns the left data frame and the rows matching from the right dataframe
+        If no matching key is available  in right then Fill with  Null
+
+    Right join:
+        It returns the Right data frame and the rows matching from the left dataframe
+
+
+3.Full Outer Join:
+    It returns all the rows from left and right dataframe, also filled unmatched entry with NULL .
+
+
+4.Cross join:
+    It  creates the data by pairing every row in one dataframe with every row in another.
+
+SPECIAL JOIN IN Pyspark
+
+5.Semi  Joins:
+    It returns rows from the left dataframe where matching key exixt in the right data frame.
+    It does not adds colums from the right dataframe and avoid duplicates,makes it ideal for existing check.
+
+
+6.Anti Joins:
+    It returns rows from one dataframe that have no matching key in the 2nd dataframe.
+
