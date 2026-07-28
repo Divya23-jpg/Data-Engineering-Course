@@ -1,0 +1,17 @@
+Medallian Arcitecture is a data design used to logically organize the datain a data lake organize
+or lakehouse through three progressive layers Brones, Silver, Gold
+
+
+The Three core layers:
+
+1.Bronze layer:
+    Stores the unprocessed data in its origican format. It keeps the compute historical record
+    so that the tean can Process its
+
+2.Silver Layer [Validation]:
+    Contains the cleaned, filter and standard data. Records are matched accross 
+    the system, null values are fixed, and types are made uniform.
+
+3.Gold Layer [Ennched]:
+    Holds highly refined data.Business level data to stored.This layer power executive
+    dashboards, reports, machine learning model.
