@@ -22,21 +22,82 @@ Key features of Numpy:
 
 Common Operation: import numpy as np
 
+Arrays Types:
+    1️⃣ 1D Array (Vector):
+        arr1 = np.array([1, 2, 3, 4, 5])
+
+    2️⃣ 2D Array (Matrix)
+        arr2 = np.array([[1, 2, 3],
+        [4, 5, 6]])
+    
+    3️⃣ 3D Array (Tensor)
+        arr3 = np.array([[[1, 2], [3, 4]],[[5, 6], [7, 8]]])
+
 1.Creation of array: 
     np.array(): Convert a list into array of object
     np.zeroes(): array of all zeroes
     np.ones(): array of all ones
-    np.arange():
+    np.arange():numpy.arange([start], stop, [step], dtype=None)
+                like range()
+    np.linspace() : you specify number of elements.
 
 2.Slicing / Indexing:
+    Slicing
     similar to Python list  [start:stop:step]
     It can Extract Sub-section
 
+    Boolean Indexing
+        way to filter elements from an array using True/False conditions
+        Ex: arr > 25 creates a Boolean array.
+
+    Fancy Indexing
+        selecting elements from an array using lists or arrays of indices instead of slices or Boolean masks
+
 3.Reshaping: Change the arays Dimentions
-    1D -> 2D
-    .reshape()
+
+    1.shape → Returns a tuple showing the dimensions of the array.
+    2.ndim → Number of dimensions (axes).
+    3.size → Total number of elements.
+    4.dtype → Data type of elements.
 
 
+    Array Method
+        1D -> 2D
+        reshape() → Changes the shape of the array without changing data.
+
+4.Random Module
+    1.rand():
+        Generates random numbers between 0 and 1 (uniform distribution)
+        EX: np.random.rand()  Single random float
+        EX: np.random.rand(2, 3)    # 2x3 array of random floats
+
+    2.randint():
+        Generates random integers within a given range.
+        Syntax: np.random.randint(low, high, size)
+
+    3.seed():
+        Sets the random seed to make results reproducible.
+        Same seed → same random sequence.
+        EX: np.random.seed(42)
+
+
+IMPORTANT QUE:
+
+1.Difference Between Array vs List
+    👉 “A Python list can store mixed data types and is slower,
+    while a NumPy array stores homogeneous data and supports fast mathematical operations.”
+
+2.Difference between List and ndarray
+    👉 “A Python list is a general container for mixed data types, 
+    while a NumPy ndarray is a homogeneous, multi‑dimensional array optimized for fast numerical operations.”
+
+3.Difference between Copy vs View
+    👉“Copy makes a completely independent array, 
+    while View shares the same data with the original.”
+
+4.Axis
+    👉“Axis in NumPy defines the dimension along which an operation is applied — axis 0 is rows, axis 1 is columns, axis 2 is depth.”
+    
 Python Libraries that uses Numpy aray:
     1.Pandas
     2.Scipy
