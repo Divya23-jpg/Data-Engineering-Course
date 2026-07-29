@@ -7,10 +7,12 @@ Core Data structure:
         any datatype (int,string etc)
         like a column in Excel
 
+
     2.Data Frame:
         A two dimentional size ,mutable, and potentially hetrogenous
         tabular data structure with the labeles axes(rows and cols)
         like a full Excel sheet.
+
 
 
 Pandas is used for :
