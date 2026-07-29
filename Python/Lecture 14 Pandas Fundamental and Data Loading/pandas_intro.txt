@@ -5,17 +5,30 @@ Core Data structure:
     1.Series:
         A one dimentional labeled array capable of holding 
         any datatype (int,string etc)
+        like a column in Excel
 
     2.Data Frame:
         A two dimentional size ,mutable, and potentially hetrogenous
         tabular data structure with the labeles axes(rows and cols)
+        like a full Excel sheet.
 
 
 Pandas is used for :
     1.Data Cleaning
+        Removing or fixing incorrect, inconsistent, or duplicate data.
+        Example: Dropping null values, correcting typos, removing duplicates.
+    
     2.Data manipulation
+        Changing or reorganizing data to make it usable.
+        Example: Adding new columns, filtering rows, merging/joining datasets.
+
     3.Data Transformation
-    4.Data Imputation
+        Converting data into a suitable format or scale.
+        Example: Normalization, encoding categorical variables, scaling.
+    
+    4.Data Imputation:
+        Filling in missing values with meaningful substitutes.
+        Example: Replace NaN with mean, median, mode, or predictive values.
 
 
 Essential Features:
@@ -34,7 +47,7 @@ Essential Features:
 
 
 5.Time series:
-    sophesticated functionality for data  based on the date includinh the frequenecy coversion
+    sophesticated functionality for data  based on the date including the frequenecy coversion
 
 
 
@@ -50,8 +63,8 @@ iloc:
 
 To have Exploratory Data Analysis (EDA):
     1.Initial Inspector:
-        Descriptive Analysis .info()
-        statistical Analysis .describe()
+        Descriptive Analysis : .info()
+        statistical Analysis :.describe()
         .head(),.tail(),.shape
     
     2.Handling Missing value:
