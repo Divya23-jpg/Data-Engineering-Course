@@ -1,3 +1,23 @@
+
+What is Spark?
+    Apache Spark is an open-source distributed data processing framework 
+    used to process large amounts of data quickly across multiple computers (called a cluster).
+
+
+What is PySpark?
+
+    "PySpark is the Python API of Apache Spark that allows developers to process and analyze large-scale datasets using Python. 
+    It distributes data across multiple machines and performs computations in parallel, making it much faster than single-machine 
+    libraries like Pandas for large datasets. PySpark is widely used in Data Engineering for building ETL pipelines, batch processing, real-time analytics, and big data applications."
+
+Difference between Hadoop and Spark
+
+    1.Hadoop is a framework that provides distributed storage using HDFS and batch processing using MapReduce. 
+      Spark is a distributed data processing engine that performs computations mainly in memory, making it much faster than Hadoop MapReduce
+    2.Hadoop is commonly used for storing large datasets,
+      while Spark is used for fast ETL pipelines, analytics, machine learning, and streaming
+
+
 Apache Spark uses a master slave [driver-executor] architecture to coordinate distributed data processing accross a cluster of machines.
 It relies on a central coordinator called the Driver. and multiple distributed workers are called Executors, which are connected via an external cluster Manager.
 
@@ -11,7 +31,7 @@ The Apache Spark cluster mode relies on 4 critical Components:
     It executes the main()  function, craetes the spark Session,translates user code into logical plans and schedules the task.
 
 2.Cluster manager:
-    An external service that aalocates physical resources [CPU & Memory ] accross the application.
+    An external service that alocates physical resources [CPU & Memory ] accross the application.
     Supported Manager includes spark standalone,Hadoop YARN,Kubernetes and Apache Mesos.
 
 
@@ -23,6 +43,17 @@ The Apache Spark cluster mode relies on 4 critical Components:
     in Memory or disk.
 
 
+
+SparkContext
+
+    SparkContext is the low-level connection between your application and the Spark cluster.
+    Earlier versions of Spark required creating a SparkContext directly.
+    from pyspark import SparkContext
+    sc = SparkContext()
+
+SparkSession (Very Important)
+    SparkSession is the entry point of every modern PySpark application
+    Creates SparkContext automatically,Reads files,Creates DataFrames.
 
 Execution Hierarchy:
     Spark breaks down data processing into a specific Hierarchy to scale task efficiently.
@@ -60,4 +91,14 @@ when we submit a script of Apache spark, the following engine proccesses your co
     Execution processes data partition in memory ,exchange intermidiate data if shuffle is required , and stream final result back to the driver.
 
 
-    
+Narrow Transformation
+    Definition: Each input partition contributes to only one output partition.
+    No shuffle across the cluster.
+    Fast and efficient because data stays local.
+    Examples: map(), flatMap(), filter()
+
+Wide Transformation
+    Definition: Input partitions contribute to multiple output partitions.
+    Requires shuffle (data moved across nodes).
+    Slower due to network and disk I/O.
+    Examples: groupByKey(), reduceByKey(), join()
