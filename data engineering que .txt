@@ -1,0 +1,190 @@
+Common methods for ingestion data:
+
+1.Real Time ingestion (stream)
+2.API based ingestion
+3.File based Ingestion
+4.Batch ingestion
+5.chnage data capture ( only capture the operation not store whole data)
+
+
+3.What is Apache Kafka?? where it is used in a data pipeline.
+
+    1.It is open source,used for  distributed event streaming platform 
+    2.support real time 
+    3.fault tolerant
+    4.durable
+    5.high throuput[handling multiple of transaction per sec]
+    6.Scalability
+    7.Publisher-Subscribe Model
+        Publisher-Stores to kafka topics
+        Subscribe - Subscribes to topics and process the data
+        
+
+    2..used in Ingestion Step
+
+
+4.What is the different between ETL and ELT?
+
+
+these are the Process of  moving data to multiple sources to a target system [data warehouse] in a structure and usable format
+thees are the process of converting multiple  data structure into 
+
+sources of data            data warehouse or data lake
+
+PDF
+CSV
+WEb scripting
+CDC
+
+
+
+
+EXtract   Transform   Load 
+  
+5.what are data quality check in data enginnering? 
+
+1.NUll values
+2.Duplicates
+3.Data type Validation
+4.Range validation [check for outlier]
+5.Schema validation
+6.Refereantial Integrity check [if foreign key not present in another table ]
+
+
+
+
+6.What is Idempotency in DE pipeline?
+
+ETL Pipeline should produce same result after every run without creating Duplicates
+or inconsistency.
+
+
+
+
+7.Different Type of data storage system.
+
+1.Data warehouse : Bigquery,Redshift
+2.Data lakes : AWS S3+glue,Azure data lake ,
+3.Relational Databases: MYSQL,POSTGREES,Oracle
+4.NO Sql: MongoDB , Casandra, 
+    Types of NOSQL : Document: MongoDB
+    Key-value:DynamoDB
+    Colummnar:Casandra
+    Graph-based:
+
+5.Object storage: Google cloud storage,AWS S3
+
+This is a persistance (Permannatly storage)
+6.file system/Distributed file system:
+     NTFS for file system
+     HDFS: Distributed file system
+
+This is a Cache (Temprory storage)
+7.In-memory Database/Cache: Redis,stores everything in RAM For real memory
+
+
+
+8.What is Colummnar storage?
+
+Data is stored into columns instead of row by row. in a 1 dimension
+for fast retrieving  and memory efficient 
+
+EX:
+
+
+DEV         Gourav
+dev@gmail   gourav@gmail
+234455      90786543
+
+
+
+
+9.ACID Property in SQL
+
+
+A-Atomicity
+C-Consistency
+I-Isolation
+D-Durability
+
+
+10.What is Data Modeling ?
+
+Data Modeling is process of  designing the schema ,relationship, constraints.
+it involves  How data is stored in tables,columns, schema.
+
+
+11.Types of Schema ? Differentiate between
+
+structured Schema:
+    Star Schmema : One centeral structure a
+    Relational Schema : Tabular Structure and connected to another table
+    Snoflake schema:
+    Flat Model: Unique separate table which is independent
+    Hierarchical Model: Tree structure
+    Network Model: many to many Connection
+
+
+    difference between star schema & Snoflake
+
+
+    Fact table : specific figure (numerical value)
+    Dimension table: specific Property of any person or any thing (name,id,course)
+
+    STAR SCHEMA:
+        In this 1 central table [fact table] and connected to multiple Dimentional table
+
+    SNOFLAKE SCHEMA:
+        in this 1 fact table is connected to Dimension table and further Dimension table 
+
+Meta data : data of the data
+
+
+12.What  is major difference between partitionaning and buketing?
+    or method to dividing the data
+
+            partitionaning                                      Bucketing
+
+1.  Dividing larger dataset into smaller parts              Divide the whole data into fixed number of 
+    Based on the value                                      buckets using the hash function     
+
+2.  Range of values                                         Objects with the same hash function would be stored in the buckets
+
+
+
+EX: 700 Gb file  and 3 device I have with  250 I want to divide my 700GB data
+    1.whole to one by one and left data is stored in 3rd device
+    2.Creating 3 bucket to store 700gb 
+    
+
+13.what is Big data and 6 V's in bIg data??
+
+Extremely large amount of data or larger set of data where traditional tools fails for data insights
+
+
+6 V's in bIg data
+
+Volume:Massive amount of data
+velocity:Speed of generation 
+variety: Different type of data (structured,unstructured,Semi structured)
+value: Useful for business insights, data should be meaningfull
+veracity: accuracy , trustworthy
+Variability:inconsistent and chnaging 
+
+
+14.Explain Hadoop architecture.
+
+It follows master-salve architecture for storing and processing the data in distributed manner
+master node manages the cluster
+worker node process the data
+
+
+
+HDFS [Hadoop Distributed file systen]: Storing data 
+YARD [Yet Another Resource Negotiator]: Resourec Allocator
+Map Reduce: processing, computing [Transform the data]
+
+
+Name node Datanode
+HDFS Block 
+client
