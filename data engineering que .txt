@@ -208,3 +208,30 @@ architecture of component:
 
 
 4.Secondary Name Node [check point Node]
+
+
+What is Map Reduce?
+Splits the larger dataset to process on multiple machines parallel. called distributed system.
+
+
+Phase of Map Reduce [Three phases]:
+mapping pahse: Divide the data
+sorting/shuffling: Shuffle individual block and sorting according to key value pair
+Reduce:Combined and store
+
+Workflow of Map Reduce:
+1.Tale all files in HDFS and divide it into smaller part.
+2.Map Phase converts the raw input into key value pair. with help of mapper function
+3.Shuffle and sorting
+4.Reducers aggregates all individual block belonging to each key
+5.Final Ouput where processed output is stored back to HDFS
+
+
+What is YARN[Yet Another Resource Negotiator]?
+
+    1.It is  a Resource management layer in Hadoop .
+    2.Used to Schedule the task (Jobs)
+    
+    component of YARN
+
+    
