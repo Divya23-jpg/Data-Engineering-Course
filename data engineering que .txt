@@ -178,13 +178,33 @@ It follows master-salve architecture for storing and processing the data in dist
 master node manages the cluster
 worker node process the data
 
-
+Features of Hadoop:
+1.Distributed storage layer in Hadoop
+2.Replication of individual block ensures of fault tolerance
+3.High throuput accross larger dataset
+4.horizontal Scaling can be done on nodes
 
 HDFS [Hadoop Distributed file systen]: Storing data 
 YARD [Yet Another Resource Negotiator]: Resourec Allocator
 Map Reduce: processing, computing [Transform the data]
 
 
-Name node Datanode
-HDFS Block 
-client
+architecture of component:
+
+1.Name Node - Master node
+    1.manages Meta data
+    2.monitor
+    3.Manages the Namespace operation like read,update,delete 
+    4.It maintains a Secondary NameNode as a check point ensuring high availability 
+    5.Responsible to manages the block Replication ensures fault tolerance
+
+2.Data Node - worker node
+    1.Actual Block of data are stored.
+    2.Responsible for actual read/write operation on the data.
+    3.Ensures the data Integrity.
+    4.Perform the actual block Replication and deletion as inconsistency 
+
+3.HDFS Block
+
+
+4.Secondary Name Node [check point Node]
