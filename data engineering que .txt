@@ -219,6 +219,12 @@ mapping pahse: Divide the data
 sorting/shuffling: Shuffle individual block and sorting according to key value pair
 Reduce:Combined and store
 
+
+
+
+
+
+
 Workflow of Map Reduce:
 1.Tale all files in HDFS and divide it into smaller part.
 2.Map Phase converts the raw input into key value pair. with help of mapper function
@@ -234,4 +240,3 @@ What is YARN[Yet Another Resource Negotiator]?
     
     component of YARN
 
-    
