@@ -240,3 +240,15 @@ What is YARN[Yet Another Resource Negotiator]?
     
     component of YARN
 
+
+
+What is CAP Theorm?
+ In cap theorm States that we can access only 2 among them 3
+C- Consistency
+A- Availability
+P- partitionaning
+
+What is Sharding in distributed dataset?
+
+horizontal partitionaning technique that distributes the large dataset into multiple 
+Database servers called shards and process called Sharding
