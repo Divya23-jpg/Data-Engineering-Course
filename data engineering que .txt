@@ -252,3 +252,31 @@ What is Sharding in distributed dataset?
 
 horizontal partitionaning technique that distributes the large dataset into multiple 
 Database servers called shards and process called Sharding
+
+
+
+
+What are containers in DE?
+
+It is an environment which has all requirements availabile for running an application
+
+
+
+
+What is Apache Spark and Explain its application?
+
+individual Operation in DE pipeline
+
+    1.It is Distributed a In-memory processing engines availabile in Hadoop ecosystem 
+    2.Used to processes massive datasets across clusters of machines.
+    3.Master slave architecture 
+
+    Architecture of Apache Spark
+
+    Driver: Coordinates tasks, schedules jobs, and manages metadata.
+
+    Executors: Run tasks on distributed data and report results back to the driver.
+
+    Cluster Manager: Allocates resources (Standalone, YARN, Mesos, Kubernetes).
+
+
