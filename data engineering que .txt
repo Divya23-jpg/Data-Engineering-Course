@@ -280,3 +280,45 @@ individual Operation in DE pipeline
     Cluster Manager: Allocates resources (Standalone, YARN, Mesos, Kubernetes).
 
 
+
+
+What is RDD vs DataFrame  VS dataset.
+
+1.RDD [Resilient Distributed Dataset]:
+    Spark Fundamental Distributed data structure.
+    It stores data in a collection of objects.
+    No pre defined schema
+    There is no predefined schema
+    It provides Full control over Low  level Transformation & Distributed processing.
+    It ensures Fault tolerance due to data is stored in different nodes
+    Maximum Flexibility
+    Data is unstructured
+
+2.DataFrame:
+    Data is stored as Relational structure (Rows and Columns)
+    It has pre defined Schema.
+    It supports High level API and SQL queries.
+    efficient for processing structure and semi structure data
+
+
+3.Dataset:
+    It is a Distributed set of objects 
+    It combines the benefits of RDD (strong typing, functional programming) and DataFrame (optimized execution, schema awareness).
+    It provides compile time Type checking 
+
+
+
+What is Transformation and Action?
+
+Both are Types of Operation Performed on RDD, DataFrame and datasets
+
+Transformation:
+    All method which transform or change the data
+    EX: .select() , .filter(), .group by(), .join(), withcolumn()
+    Spark build DAG before the Transformation then it executes
+Action:
+    Executes the operation and Shows the output
+    EX: .collect(), .save(), .show(), write(),overwrite()
+    
+
+
