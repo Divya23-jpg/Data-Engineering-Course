@@ -167,8 +167,22 @@ Slowly Changing Dimension[SCD]
     are the  techniques manages how dimension tables handle the chnages to descriptive data over time.
 
     Type 1: overwritting
-    Type 2: Add New Row
+        Replaces the existing historical data with new values
+        No history: overwrite the old attributes value directly.
+        Simple Logic: Requires no complex column tracking
+        Easy maintanance
+        Drawbacks:
+            Destryes the historical reporting accuracy for past transaction.
 
+    Type 2: Add New Row
+        Tracks full historical chnages by creating new row for wvery update
+        Presrve the history: Reatin the exact state of data at any point of time
+        Audit Tracking: uses start_date,end_date and is_current flag.
+        Accurate reporting: Allow facts to link to the exact dimension state when the event occured
+    
+    Practical example:
+        Create a star schema with the help SQL.
+        Craete a snowflake schema example with the help of SQL
 
 12.What  is major difference between partitionaning and buketing?
     or method to dividing the data
