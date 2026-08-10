@@ -156,12 +156,18 @@ structured Schema:
         1.Normalization Design:Eliminates the data Reducndancy by breaking the dimension into 3NF
         2.High complexity: It Requires complex SQL joins accross multiple table yo reconstruct
         3.Space efficient:Minimizes the storage footprints by Reducing the Duplicates text values.
-        4.Best use:Used when storage cost is primary constraints or for a specific  
-
-
+        4.Best use:Used when storage cost is primary constrain or for a specific  master data system.
 
 
 Meta data : data of the data
+
+
+Slowly Changing Dimension[SCD]
+
+    are the  techniques manages how dimension tables handle the chnages to descriptive data over time.
+
+    Type 1: overwritting
+    Type 2: Add New Row
 
 
 12.What  is major difference between partitionaning and buketing?
