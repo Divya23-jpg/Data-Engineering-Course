@@ -111,6 +111,7 @@ D-Durability
 10.What is Data Modeling ?
 
 Data Modeling is process of  designing the schema ,relationship, constraints.
+Data Modeling organizes the data to optimize storage retrieval speed in data warehouse
 it involves  How data is stored in tables,columns, schema.
 
 
@@ -129,13 +130,36 @@ structured Schema:
 
 
     Fact table : specific figure (numerical value)
-    Dimension table: specific Property of any person or any thing (name,id,course)
+        1.fact table stores the quantitative measures and metrices resulting from a business event.
+        2.Numerical Value like price,quantity,duration
+        3.It sotes foreign key that connects directly to related dimension table
+        4.Rapid growth : Accumalates millions of records quickly as business transaction occurs
 
+    Dimension table: specific Property of any person or any thing (name,id,course)
+        1.stores Descriptive context about the business entities
+        Ex;Textual attributes like Name,City 
+        its stores primary key which provides unique identifier for the fact table to refernce
+        slow growth:Contains fewer rows that changes less frequently than the fact data.
+    
     STAR SCHEMA:
         In this 1 central table [fact table] and connected to multiple Dimentional table
-
+        1.simplest Design: Resembles a star shape with the fact table at centeral
+        2.High Performance:Requires a fewer SQL Joins to retrieve the data.
+        3.Denormalized data:Repeats the Descriptive value, which increases the storage footprints
+        4.Best Use:Preferd in Moders Cloud storage where storage is cheap
+    
     SNOFLAKE SCHEMA:
-        in this 1 fact table is connected to Dimension table and further Dimension table 
+        In this 1 fact table is connected to Dimension table and further Dimension table 
+        It splits the dimention Table into sub dimension table to normalization the data.       
+        Properties:
+
+        1.Normalization Design:Eliminates the data Reducndancy by breaking the dimension into 3NF
+        2.High complexity: It Requires complex SQL joins accross multiple table yo reconstruct
+        3.Space efficient:Minimizes the storage footprints by Reducing the Duplicates text values.
+        4.Best use:Used when storage cost is primary constraints or for a specific  
+
+
+
 
 Meta data : data of the data
 
@@ -280,8 +304,6 @@ individual Operation in DE pipeline
     Cluster Manager: Allocates resources (Standalone, YARN, Mesos, Kubernetes).
 
 
-
-
 What is RDD vs DataFrame  VS dataset.
 
 1.RDD [Resilient Distributed Dataset]:
@@ -320,5 +342,45 @@ Action:
     Executes the operation and Shows the output
     EX: .collect(), .save(), .show(), write(),overwrite()
     
+What is  DAG (Directed Acyclic Graph)
+    
+    Definition: A graph structure with nodes (tasks) 
+    and edges (dependencies) where no cycles exist.
+    In Spark:
+    When you apply transformations (map, filter, groupBy), Spark does not execute immediately.
+    Instead, it builds a DAG of stages and tasks representing the logical execution plan.
+    This DAG is later optimized and executed when an action (like collect(), count()) is triggered.
 
 
+What is Crone Jobs?
+
+
+
+What is Cache and Persist in Pyspark?
+
+.cache(): It stores Temprory storge deafult spark memory storage 
+    Ex: if you run any DataFrame or RDD at that time data is stored in cache
+
+.persist(): Allows to resuse the data . It stores permanently
+    EX: When datasets are too large for memory or need custom storage handling.
+
+
+What is Windowing in stream processing?
+
+1.sliding window:Fixed window and  data has chnage over time.overlapping because takes 1 window from old window
+2.Tumbling window: Fixed and non overlapping windows[carry always new window].
+3.Session window: Windows are needs on the basis of session.
+
+
+What are the library for data processing?
+
+1.Pandas:
+2.Numpy:
+3.Pyspark:
+4.Dask: for partial processing
+
+
+Create a basic data processing pipeline with the help of pandas.
+
+
+Data Modeling?
