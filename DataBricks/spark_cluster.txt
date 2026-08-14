@@ -1,0 +1,2 @@
+What is Spark Cluster?
+When we Combine two or multiple nodes it becomes Cluster
