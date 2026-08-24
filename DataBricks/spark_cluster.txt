@@ -1,2 +1,11 @@
+what is cluster?
+    When we Combine two or multiple nodes it becomes Cluster
+
 What is Spark Cluster?
-When we Combine two or multiple nodes it becomes Cluster
+    
+    A Spark cluster is the distributed environment where Spark applications run,
+    with the driver coordinating tasks and executors on worker nodes performing computations.
+
+    
+What is DataBricks??
+A managed plateform that combines Apacke Sparks distributed power with the flexibility of the cloud
