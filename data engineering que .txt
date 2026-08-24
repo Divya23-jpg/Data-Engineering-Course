@@ -154,7 +154,7 @@ structured Schema:
 Meta data : data of the data
 
 
-Slowly Changing Dimension[SCD]
+11.Slowly Changing Dimension[SCD]
 
     are the  techniques manages how dimension tables handle the chnages to descriptive data over time.
 
@@ -195,111 +195,169 @@ EX: 700 Gb file  and 3 device I have with  250 I want to divide my 700GB data
 
 13.what is Big data and 6 V's in bIg data??
 
-Extremely large amount of data or larger set of data where traditional tools fails for data insights
+    Extremely large amount of data or larger set of data where traditional tools fails for data insights
 
 
-6 V's in bIg data
+    6 V's in bIg data
 
-Volume:Massive amount of data
-velocity:Speed of generation 
-variety: Different type of data (structured,unstructured,Semi structured)
-value: Useful for business insights, data should be meaningfull
-veracity: accuracy , trustworthy
-Variability:inconsistent and chnaging 
+    Volume:Massive amount of data
+    velocity:Speed of generation 
+    variety: Different type of data (structured,unstructured,Semi structured)
+    value: Useful for business insights, data should be meaningfull
+    veracity: accuracy , trustworthy
+    Variability:inconsistent and chnaging 
 
+14.What is Distributed computing?
+    Distributed computing is the process of splitting a large computational task into smaller subtask and exceuting
+    them in parallel across multiple machines that work together as  a single system
 
-14.Explain Hadoop architecture.
+    Another defination:
+    A computing model where tasks are divided and executed 
+    across multiple machines (nodes) working together to solve large or complex problems.
 
-It follows master-salve architecture for storing and processing the data in distributed manner
-master node manages the cluster
-worker node process the data
-
-Features of Hadoop:
-1.Distributed storage layer in Hadoop
-2.Replication of individual block ensures of fault tolerance
-3.High throuput accross larger dataset
-4.horizontal Scaling can be done on nodes
-
-HDFS [Hadoop Distributed file systen]: Storing data 
-YARD [Yet Another Resource Negotiator]: Resourec Allocator
-Map Reduce: processing, computing [Transform the data]
+    Example: Google Search uses distributed computing to query billions of web pages simultaneously.
 
 
-architecture of component:
-
-1.Name Node - Master node
-    1.manages Meta data
-    2.monitor
-    3.Manages the Namespace operation like read,update,delete 
-    4.It maintains a Secondary NameNode as a check point ensuring high availability 
-    5.Responsible to manages the block Replication ensures fault tolerance
-
-2.Data Node - worker node
-    1.Actual Block of data are stored.
-    2.Responsible for actual read/write operation on the data.
-    3.Ensures the data Integrity.
-    4.Perform the actual block Replication and deletion as inconsistency 
-
-3.HDFS Block
-
-
-4.Secondary Name Node [check point Node]
-
-
-What is Map Reduce?
-Splits the larger dataset to process on multiple machines parallel. called distributed system.
-
-
-Phase of Map Reduce [Three phases]:
-mapping pahse: Divide the data
-sorting/shuffling: Shuffle individual block and sorting according to key value pair
-Reduce:Combined and store
-
-
-
-
-
-
-
-Workflow of Map Reduce:
-1.Tale all files in HDFS and divide it into smaller part.
-2.Map Phase converts the raw input into key value pair. with help of mapper function
-3.Shuffle and sorting
-4.Reducers aggregates all individual block belonging to each key
-5.Final Ouput where processed output is stored back to HDFS
-
-
-What is YARN[Yet Another Resource Negotiator]?
-
-    1.It is  a Resource management layer in Hadoop .
-    2.Used to Schedule the task (Jobs)
+    Types of data processing styles:
     
-    component of YARN
+    Batch Processing
+        A processing style where data is collected over time and processed in bulk.
+        Batch jobs are often implemented on top of distributed computing systems 
+        (e.g., Hadoop MapReduce runs batch jobs across many nodes).
+
+    Stream Processing
+        A processing style where data is processed continuously as it arrives, enabling real‑time insights.
+        Stream jobs also run on distributed computing systems 
+        (e.g., Spark Streaming, Flink distribute events across nodes).
+
+15.Explain Hadoop and its architecture.
+
+   
+
+    Definition: An open‑source framework for storing and processing large datasets
+    using distributed computing. It relies on HDFS (Hadoop Distributed File System) for storage and MapReduce for batch processing.
+    
+    Example: Used by Facebook to process petabytes of user activity logs overnight.
+    
+    It follows master-salve architecture for storing and processing the data in distributed manner
+    master node manages the cluster
+    worker node process the data
+
+    Features of Hadoop:
+    1.Distributed storage layer in Hadoop
+    2.Replication of individual block ensures of fault tolerance
+    3.High throuput accross larger dataset
+    4.horizontal Scaling can be done on nodes
+
+    Main Architecture of Hadoop:
+
+    HDFS [Hadoop Distributed file systen]: Storing data 
+    YARD [Yet Another Resource Negotiator]: Resourec Allocator
+    Map Reduce: processing, computing [Transform the data]
+
+
+    architecture of component:
+        
+        HDFS [Hadoop Distributed file systen]: Storing data 
+
+    1.Name Node - Master node
+        1.manages Meta data
+        2.monitor
+        3.Manages the Namespace operation like read,update,delete 
+        4.It maintains a Secondary NameNode as a check point ensuring high availability 
+        5.Responsible to manages the block Replication ensures fault tolerance
+
+    2.Data Node - worker node
+        1.Actual Block of data are stored.
+        2.Responsible for actual read/write operation on the data.
+        3.Ensures the data Integrity.
+        4.Perform the actual block Replication and deletion as inconsistency 
+    
+    3.Secondary Name Node [check point Node]
+        1.helper for NameNode metadata housekeeping.
+    
+    Features of HDFS:
+        1.Replication → Ensures fault tolerance by storing multiple copies of each block (default factor = 3).
+        2.High Availability (HA) → Active/Standby NameNodes prevent single point of failure.
+        3.Federation → Multiple NameNodes manage separate namespaces, allowing horizontal scaling
+     
+    Example: A 1 GB file is split into 8 blocks of 128 MB, stored across different DataNodes with replication.
+
+        YARD [Yet Another Resource Negotiator]: Resourec Allocator
+
+    1.ResourceManager: 
+        Allocates CPU/memory containers across the cluster.
+
+    2.NodeManager: 
+        Runs on each node, monitors resources, reports to ResourceManager.
+
+    3.ApplicationMaster: 
+        Launched per application, negotiates resources and coordinates execution.
+
+    Example: If you run a Spark job on Hadoop, YARN decides which nodes get memory/CPU for each task.
+
+        Map Reduce: processing, computing [Transform the data]
+    
+    1.Map Phase: 
+        Splits input into key‑value pairs, processes them in parallel.
+
+    2.Shuffle & Sort: 
+        Groups intermediate results by key.
+
+    3.Reduce Phase: 
+        Aggregates values for each key to produce final output.
+    
+    Example: Word Count → Map (“hello world”) → (“hello”,1), (“world”,1) → Reduce → (“hello”,1), (“world”,1).
 
 
 
-What is CAP Theorm?
- In cap theorm States that we can access only 2 among them 3
-C- Consistency
-A- Availability
-P- partitionaning
+16.What is Map Reduce?
+    Splits the larger dataset to process on multiple machines parallel. called distributed system.
 
-What is Sharding in distributed dataset?
+    Phase of Map Reduce [Three phases]:
+    mapping pahse: Divide the data
+    sorting/shuffling: Shuffle individual block and sorting according to key value pair
+    Reduce:Combined and store
 
-horizontal partitionaning technique that distributes the large dataset into multiple 
-Database servers called shards and process called Sharding
-
-
-
-
-What are containers in DE?
-
-It is an environment which has all requirements availabile for running an application
+    Workflow of Map Reduce:
+    1.Take all files in HDFS and divide it into smaller part.
+    2.Map Phase converts the raw input into key value pair. with help of mapper function
+    3.Shuffle and sorting
+    4.Reducers aggregates all individual block belonging to each key
+    5.Final Ouput where processed output is stored back to HDFS
 
 
 
 
-What is Apache Spark and Explain its application?
+17.What is CAP Theorm?
+    CAP theorem states that in a distributed system, you can only guarantee two out of three properties at the same time:
+        Consistency (C) → Every read gets the most recent write (all nodes show the same data).
+        Availability (A) → Every request receives a response (success/failure), even if some nodes are down.
+        Partition Tolerance (P) → The system continues to operate despite network failures (nodes not communicating).
+
+
+18.What is Sharding in distributed dataset?
+
+    Sharding is a horizontal partitioning technique in distributed databases  that distributes the large dataset into multiple 
+    Database servers called shards  and each shard is stored on a different server (node) in a distributed system.
+
+    Key Idea:
+    Instead of keeping all data on one machine, sharding distributes subsets of data across multiple machines to 
+    improve scalability, performance, and fault tolerance.
+
+
+
+19.What are containers in DE?
+
+    It is an environment which has all requirements availabile for running an application
+
+
+
+
+20.What is Apache Spark and Explain its application?
+
+    It is an open source distributed computing engine designed to process
+    large scale data quickly and efficiently.
 
 individual Operation in DE pipeline
 
@@ -316,83 +374,85 @@ individual Operation in DE pipeline
     Cluster Manager: Allocates resources (Standalone, YARN, Mesos, Kubernetes).
 
 
-What is RDD vs DataFrame  VS dataset.
+21.what is Databricks?
+    Databricks is a cloud‑based unified data analytics platform built on Apache Spark.
+    It provides a collaborative workspace (notebooks, dashboards) for data engineers, data scientists, and analysts to work together.
 
-1.RDD [Resilient Distributed Dataset]:
-    Spark Fundamental Distributed data structure.
-    It stores data in a collection of objects.
-    No pre defined schema
-    There is no predefined schema
-    It provides Full control over Low  level Transformation & Distributed processing.
-    It ensures Fault tolerance due to data is stored in different nodes
-    Maximum Flexibility
-    Data is unstructured
-
-2.DataFrame:
-    Data is stored as Relational structure (Rows and Columns)
-    It has pre defined Schema.
-    It supports High level API and SQL queries.
-    efficient for processing structure and semi structure data
+    Key strengths:
+        1.Managed Spark clusters (no manual setup).
+        2.Scalability (auto‑scales with workload).
+        3.Integration with cloud storage (AWS S3, Azure Data Lake, GCP).
+        4.Supports ML & AI workflows alongside ETL and analytics.
 
 
-3.Dataset:
-    It is a Distributed set of objects 
-    It combines the benefits of RDD (strong typing, functional programming) and DataFrame (optimized execution, schema awareness).
-    It provides compile time Type checking 
+22.What is RDD vs DataFrame  VS dataset.
+
+    1.RDD [Resilient Distributed Dataset]:
+        1.Spark Fundamental Distributed data structure.
+        2.It stores data in a collection of objects.
+        3.No pre defined schema
+        4.There is no predefined schema
+        5.It provides Full control over Low  level Transformation & Distributed processing.
+        6.It ensures Fault tolerance due to data is stored in different nodes
+        7.Maximum Flexibility
+        8.Data is unstructured
+
+    2.DataFrame:
+        1.Data is stored as Relational structure (Rows and Columns)
+        2.It has pre defined Schema.
+        3.It supports High level API and SQL queries.
+        4.efficient for processing structure and semi structure data
 
 
+    3.Dataset:
+        1.It is a Distributed set of objects 
+        2.It combines the benefits of RDD (strong typing, functional programming) and DataFrame (optimized execution, schema awareness).
+        3.It provides compile time Type checking 
 
-What is Transformation and Action?
 
-Both are Types of Operation Performed on RDD, DataFrame and datasets
+23.What is Transformation and Action?
 
-Transformation:
-    All method which transform or change the data
-    EX: .select() , .filter(), .group by(), .join(), withcolumn()
-    Spark build DAG before the Transformation then it executes
-Action:
-    Executes the operation and Shows the output
-    EX: .collect(), .save(), .show(), write(),overwrite()
+    Both are Types of Operation Performed on RDD, DataFrame and datasets
+
+    Transformation:
+        All method which transform or change the data
+        EX: .select() , .filter(), .group by(), .join(), withcolumn()
+        Spark build DAG before the Transformation then it executes
+
+    Action:
+        Executes the operation and Shows the output
+        EX: .collect(), .save(), .show(), write(),overwrite()
     
-What is  DAG (Directed Acyclic Graph)
+24.What is  DAG (Directed Acyclic Graph)
     
-    Definition: A graph structure with nodes (tasks) 
-    and edges (dependencies) where no cycles exist.
+    Definition: A graph structure with nodes (tasks) and edges (dependencies) where no cycles exist.
     In Spark:
     When you apply transformations (map, filter, groupBy), Spark does not execute immediately.
     Instead, it builds a DAG of stages and tasks representing the logical execution plan.
     This DAG is later optimized and executed when an action (like collect(), count()) is triggered.
 
 
-What is Crone Jobs?
+25.What is Crone Jobs?
 
 
 
-What is Cache and Persist in Pyspark?
+25.What is Cache and Persist in Pyspark?
 
-.cache(): It stores Temprory storge deafult spark memory storage 
-    Ex: if you run any DataFrame or RDD at that time data is stored in cache
+    .cache(): It stores Temprory storge deafult spark memory storage 
+        Ex: if you run any DataFrame or RDD at that time data is stored in cache
 
-.persist(): Allows to resuse the data . It stores permanently
-    EX: When datasets are too large for memory or need custom storage handling.
-
-
-What is Windowing in stream processing?
-
-1.sliding window:Fixed window and  data has chnage over time.overlapping because takes 1 window from old window
-2.Tumbling window: Fixed and non overlapping windows[carry always new window].
-3.Session window: Windows are needs on the basis of session.
+    .persist(): Allows to resuse the data . It stores permanently
+        EX: When datasets are too large for memory or need custom storage handling.
 
 
-What are the library for data processing?
+26.What is Windowing in stream processing?
 
-1.Pandas:
-2.Numpy:
-3.Pyspark:
-4.Dask: for partial processing
-
-
-Create a basic data processing pipeline with the help of pandas.
+    1.sliding window:Fixed window and  data has chnage over time.overlapping because takes 1 window from old window
+    2.Tumbling window: Fixed and non overlapping windows[carry always new window].
+    3.Session window: Windows are needs on the basis of session.
 
 
-Data Modeling?
+
+
+
+27.Data Modeling?
