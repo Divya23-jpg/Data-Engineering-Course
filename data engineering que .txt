@@ -367,12 +367,12 @@ individual Operation in DE pipeline
 
     Architecture of Apache Spark
 
-    Driver: Coordinates tasks, schedules jobs, and manages metadata.
+    Driver: create spark session, Coordinates tasks, schedules jobs, and manages metadata.
 
     Executors: Run tasks on distributed data and report results back to the driver.
 
     Cluster Manager: Allocates resources (Standalone, YARN, Mesos, Kubernetes).
-
+                     Is help to Creatimg node
 
 21.what is Databricks?
     Databricks is a cloud‑based unified data analytics platform built on Apache Spark.
@@ -415,13 +415,22 @@ individual Operation in DE pipeline
     Both are Types of Operation Performed on RDD, DataFrame and datasets
 
     Transformation:
+
+        Defination:
+            A transformation is an operation that defines a new dataset from an exixting one but does not execute immediately
+       
         All method which transform or change the data
         EX: .select() , .filter(), .group by(), .join(), withcolumn()
         Spark build DAG before the Transformation then it executes
 
     Action:
+
+        Defination:
+            An action is an operation that triggers on the actual execution of all pending transformations and 
+            returns a result to the driver program or writes data to storage
+        
         Executes the operation and Shows the output
-        EX: .collect(), .save(), .show(), write(),overwrite()
+        EX: .collect(), .save(), .show(), write(),overwrite(),topandas()
     
 24.What is  DAG (Directed Acyclic Graph)
     
