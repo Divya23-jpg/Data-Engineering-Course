@@ -409,8 +409,22 @@ individual Operation in DE pipeline
         2.It combines the benefits of RDD (strong typing, functional programming) and DataFrame (optimized execution, schema awareness).
         3.It provides compile time Type checking 
 
+23.What is Lazy Evaluation?
 
-23.What is Transformation and Action?
+    Lazy evaluation means Spark does not execute transformations immediately. 
+    Instead, it builds a logical plan (DAG) of operations and waits until an action (like collect(), count(), or show()) is called to actually run the computation.
+
+
+    Why Lazy Evaluation is Used?
+       
+        1.Optimization: Spark can analyze the entire DAG before execution, combining or reordering steps for efficiency.
+        2.Avoids unnecessary work: If intermediate results are never used, Spark won’t waste time computing them
+            Ex: Combine both filters into one if any transformation says two filter
+        3.Fault tolerance: Since Spark knows the lineage (DAG), it can recompute lost data if a node fails.
+        4.Performance tuning/Memory efficient: Allows Spark to push filters and projections closer to the data source (predicate pushdown).
+
+
+24.What is Transformation and Action?
 
     Both are Types of Operation Performed on RDD, DataFrame and datasets
 
@@ -432,7 +446,7 @@ individual Operation in DE pipeline
         Executes the operation and Shows the output
         EX: .collect(), .save(), .show(), write(),overwrite(),topandas()
     
-24.What is  DAG (Directed Acyclic Graph)
+25.What is  DAG (Directed Acyclic Graph)
     
     Definition: A graph structure with nodes (tasks) and edges (dependencies) where no cycles exist.
     In Spark:
@@ -441,11 +455,11 @@ individual Operation in DE pipeline
     This DAG is later optimized and executed when an action (like collect(), count()) is triggered.
 
 
-25.What is Crone Jobs?
 
 
 
-25.What is Cache and Persist in Pyspark?
+
+26.What is Cache and Persist in Pyspark?
 
     .cache(): It stores Temprory storge deafult spark memory storage 
         Ex: if you run any DataFrame or RDD at that time data is stored in cache
@@ -454,7 +468,7 @@ individual Operation in DE pipeline
         EX: When datasets are too large for memory or need custom storage handling.
 
 
-26.What is Windowing in stream processing?
+27.What is Windowing in stream processing?
 
     1.sliding window:Fixed window and  data has chnage over time.overlapping because takes 1 window from old window
     2.Tumbling window: Fixed and non overlapping windows[carry always new window].
