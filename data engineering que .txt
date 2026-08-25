@@ -445,8 +445,20 @@ individual Operation in DE pipeline
         
         Executes the operation and Shows the output
         EX: .collect(), .save(), .show(), write(),overwrite(),topandas()
-    
-25.What is  DAG (Directed Acyclic Graph)
+
+
+25.What is Narrow and Wide Transformation? 
+    Narrow Transformation:
+        each output partition depends on a single input partition
+        No Shuffle (EX: select,filter,withcolumn)
+
+    Wide Transformation:
+        Output partitios depends on multiple input partition
+        Requires shuffle?Exchange between stages (EX: groupBy,non-broadcast join,orderBY)
+
+
+
+26.What is  DAG (Directed Acyclic Graph)
     
     Definition: A graph structure with nodes (tasks) and edges (dependencies) where no cycles exist.
     In Spark:
@@ -455,6 +467,7 @@ individual Operation in DE pipeline
     This DAG is later optimized and executed when an action (like collect(), count()) is triggered.
 
 
+27.
 
 
 
