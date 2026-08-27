@@ -553,3 +553,7 @@ individual Operation in DE pipeline
 
     Unity Catalog is an unified governance solution for data and AI 
     assets on the Databricks Platform.
+    It provides centralized access control access control.
+    Unity Catalog provides Three levels of  naming convesions:
+
+
