@@ -466,13 +466,7 @@ individual Operation in DE pipeline
     Instead, it builds a DAG of stages and tasks representing the logical execution plan.
     This DAG is later optimized and executed when an action (like collect(), count()) is triggered.
 
-
-27.
-
-
-
-
-26.What is Cache and Persist in Pyspark?
+27.What is Cache and Persist in Pyspark?
 
     .cache(): It stores Temprory storge deafult spark memory storage 
         Ex: if you run any DataFrame or RDD at that time data is stored in cache
@@ -481,14 +475,77 @@ individual Operation in DE pipeline
         EX: When datasets are too large for memory or need custom storage handling.
 
 
-27.What is Windowing in stream processing?
+28.What is Windowing in stream processing?
 
     1.sliding window:Fixed window and  data has chnage over time.overlapping because takes 1 window from old window
     2.Tumbling window: Fixed and non overlapping windows[carry always new window].
     3.Session window: Windows are needs on the basis of session.
 
+29.What is repartition()?
+
+    Definition: Redistributes the entire dataset across a new number of partitions using a full shuffle.
+    Key Point: Can increase or decrease partitions, ensures balanced distribution.
+
+    Why use it:
+        Before joins, groupBy, or aggregations to avoid skew[Some partitions may have millions of rows, while others have only a few.].
+
+    When you need parallelism or want to partition by a specific column.
+
+    Example:  
+        “If I have customer data and want to join by customer_id, I’ll use repartition(50, "customer_id") so rows are evenly spread across 50 partitions.”
+
+
+30.What is Coalesce()?
+
+    Definition: Reduces the number of partitions by merging them locally, without shuffle.
+    Key Point: Only reduces partitions, faster but may cause uneven partition sizes.
+
+    Why use it:
+        To optimize output files before writing (avoid too many small files).
+        When you want fewer partitions quickly without shuffle overhead.
+
+    Example:  
+        “After processing logs, if I end up with 200 tiny partitions but only want 10 output files, I’ll use coalesce(10) before writing to disk.”
+
+    Important work of coalesce in Data enginnering:
+    “In data engineering, coalesce has two major roles: 
+        In Spark, it reduces partitions without shuffle to optimize output files; 
+        In SQL, it handles NULL values by returning the first non-null expression. Both are critical — one for performance, the other for data quality.”
 
 
 
+31.What is Medallion architecture?
+    The architecture is often called a multi-hop design because data flows through multiple 
+    The Medallion Architecture is a modern data engineering design pattern used in lakehouse systems (like Databricks) that organizes data into three layers — 
+    Bronze, Silver, and Gold — to progressively improve data quality, reliability, and usability
 
-27.Data Modeling?
+
+    1. Bronze Layer (Raw Data)
+        Purpose: Landing zone for raw, unprocessed data.
+        Sources: Cloud storage, Kafka streams, IoT sensors, transactional databases.
+
+        Characteristics:   
+            Data stored in its original format (CSV, JSON, Parquet).
+            No cleanup or validation.
+            Acts as a permanent archive of “ground truth.”
+
+    Users: Data engineers, compliance teams.
+    
+    2. Silver Layer (Cleaned & Validated Data)
+        Purpose: Transform raw data into a trusted source of truth.
+        Operations:
+            Deduplication, null handling, schema standardization. 
+            Joining datasets (e.g., customer + transactions).
+            Quarantining invalid records.
+
+    Users: Data analysts, data scientists (for predictive models).
+
+    3. Gold Layer (Enriched & Aggregated Data)
+        Purpose: Deliver business-ready datasets for BI and ML.
+        Operations:
+            Aggregations, dimensional modeling, KPIs.
+            Data optimized for dashboards and reporting.
+    
+    Users: Business analysts, executives, ML engineers.
+
+
