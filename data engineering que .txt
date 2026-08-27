@@ -549,3 +549,7 @@ individual Operation in DE pipeline
     Users: Business analysts, executives, ML engineers.
 
 
+32.What is Unity Catalog in Databricks?
+
+    Unity Catalog is an unified governance solution for data and AI 
+    assets on the Databricks Platform.
