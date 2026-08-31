@@ -94,10 +94,18 @@
 
 8.ACID Property in SQL
 
-    A-Atomicity
-    C-Consistency
-    I-Isolation
-    D-Durability
+    A-Atomicity:
+        All steps in a transaction succeed tpgether,or they all fail together.No partial completion
+    
+    C-Consistency:
+        Transaction move the database from one valid state to another,maintaining all defined rules and constraints.
+
+    I-Isolation:
+        Isolation ensures that transactions execute independently without interfering with each other, so the outcome is the same as if they were run one after another
+
+    D-Durability:
+        Once the transaction is commited it stays commited-even if the system crashes immediately after.
+        We can say that our data should not be lost if the system is crashed at the same time.
 
 
 9.What is Data Modeling ?
@@ -554,6 +562,42 @@ individual Operation in DE pipeline
     Unity Catalog is an unified governance solution for data and AI 
     assets on the Databricks Platform.
     It provides centralized access control access control.
-    Unity Catalog provides Three levels of  naming convesions:
+    
+    📚 Three Levels of Naming in Unity Catalog
+
+    Catalog:
+        The top‑level container.
+        Think of it like a database cluster or a logical grouping of schemas.
+        Example: sales_catalog, finance_catalog.
+
+    Schema:
+        The second level, inside a catalog.
+        Equivalent to a database in traditional systems.
+        Organizes tables, views, and functions.
+        Example: customer_schema, transactions_schema.
+
+    Table / View / Function:
+        The third level, inside a schema.
+        Represents the actual data objects (tables, views, ML models, functions).
+        Example: orders_table, customer_view.
 
 
+    Provides IAM-like access control, but specifically for data and AI assets (tables, views, files, ML models).
+        Adds extra governance features beyond IAM:
+
+        1.Lineage tracking (how data flows and transforms).
+        2.Auditing (who accessed what, when).
+        3.Discovery (catalog explorer to find trusted data).
+        4.Multi-cloud consistency (same governance across AWS, Azure, GCP).
+
+
+33.What us Time Travel?
+
+    "Time Travel in Databricks is a Delta Lake feature that allows you to query or restore tables to previous versions or timestamps.
+    It’s mainly used for recovery, auditing [tracking and recording all activities], and debugging, ensuring you can see or roll back data exactly as it was at any point in time."
+
+
+    Its like Version control system [git/github]
+
+
+    
