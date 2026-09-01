@@ -600,4 +600,7 @@ individual Operation in DE pipeline
     Its like Version control system [git/github]
 
 
-    
+34.What is Delta lake?
+
+    Delta Lake is an open source storage layer that brings ACID transactions,Schema enforcement
+    and time travel Capabilities to delta lakes
