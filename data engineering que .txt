@@ -604,3 +604,23 @@ individual Operation in DE pipeline
 
     Delta Lake is an open source storage layer that brings ACID transactions,Schema enforcement
     and time travel Capabilities to delta lakes
+
+    It’s Built on top of Parquet Files and adds a transaction log to track all changes
+
+    Delta Lake=Parquet + Transaction Log + metadata
+
+    🔑 Key Features of Delta Lake
+    
+        ACID Transactions → Ensures reliable reads/writes, preventing corruption even at petabyte scale.
+        Schema Enforcement & Evolution → Blocks invalid data writes and allows schema changes without rewriting old data.
+        Time Travel → Query or restore tables to past versions/timestamps for auditing, debugging, or recovery.
+        Unified Batch + Streaming → Same data supports both batch analytics and real-time streaming pipelines.
+
+
+    Problem solved by Delta lake:
+    No Audit Trail 
+    Data corruption
+    Schema Drift
+
+
+
