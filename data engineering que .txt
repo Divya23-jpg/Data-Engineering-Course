@@ -624,3 +624,21 @@ individual Operation in DE pipeline
 
 
 
+
+35. DSA pattern For Arrays and String
+
+1.Dictionary/ frequency Counting 
+2.Set: Duplicate/Unique
+3.Two Pointer
+4.Sliding Window: Fixed Size and Variable sizes
+5.Prefix Sum [Only for Array]
+6.Kadane's Algorithm
+7.sorting
+8.Binary Search
+9.Stack Based
+
+
+Strings Pattern:
+
+1.string matching
+2.frequency Counting
