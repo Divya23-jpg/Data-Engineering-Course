@@ -638,6 +638,7 @@ individual Operation in DE pipeline
 9.Stack Based
 
 
+
 Strings Pattern:
 
 1.string matching
