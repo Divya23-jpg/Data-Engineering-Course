@@ -240,7 +240,6 @@ EX: 700 Gb file  and 3 device I have with  250 I want to divide my 700GB data
 
 15.Explain Hadoop and its architecture.
 
-   
 
     Definition: An open‑source framework for storing and processing large datasets
     using distributed computing. It relies on HDFS (Hadoop Distributed File System) for storage and MapReduce for batch processing.
@@ -637,9 +636,3 @@ individual Operation in DE pipeline
 8.Binary Search
 9.Stack Based
 
-
-
-Strings Pattern:
-
-1.string matching
-2.frequency Counting
