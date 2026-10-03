@@ -1,6 +1,5 @@
 1.What are the methods of Ingestion
 
-
     Common methods for ingestion data:
 
         1.Real Time ingestion (stream)
