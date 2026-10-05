@@ -106,5 +106,20 @@ Wide Transformation
 
 
     RDD: Resilient Distributed datasets
-        Its Data Structure of a Apache spark which is low level of 
+        1.Its Data Structure of a Apache spark which is low level of 
         data Structure of a Apache spark
+
+        2.its low as compared to DataFrames
+
+        3.It supports Fault tolerance and partitioning
+
+        4.use case: When hace low level Control 
+                  Unstructure data or objects
+
+
+    DataFrames:
+        1.Structured schema , faster , inbuilt function 
+        2.Optimizes the query before processing .overall it improve the performace
+
+
+    
