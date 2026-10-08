@@ -70,5 +70,18 @@ Embedding: embedding is a numerical vector representation of text
 (like a word, sentence, or document) that captures its semantic meaning.
 
 
-we store Embeddings in Vector Database like:
-    Chroma 
+we store Embeddings in Vector Database like:Chroma 
+
+
+Ollama:
+    Software by which we can setUp LLM into our local system so that 
+    we can work locally with the help of LLM so the crucial information 
+    could be Private EX: Research paper, Medical
+
+Model we use:
+    Mistral , deepseek , cloud, lana , queen
+
+
+
+Write in CMD:
+    1. Ollama pull LLM_name(via LL_website)
