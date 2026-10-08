@@ -39,6 +39,15 @@ Architecture of RAG:
         Source
 
 
+Chunking:
+    hunking means splitting large documents into smaller, manageable pieces (chunks) 
+    before converting them into embeddings and storing them in a vector database.
+
+    Types of Chunking:
+        1.fixed size chunking - it based on character 
+        2.token based - every chunk having # of tokens
+        3.paragraph based - store chunk based on paragraph
+
 
 What if we use LLM for information 
 
@@ -57,4 +66,9 @@ What if we use LLM with RAG for information
 
 
 
-Fine Tuning
+Embedding: embedding is a numerical vector representation of text 
+(like a word, sentence, or document) that captures its semantic meaning.
+
+
+we store Embeddings in Vector Database like:
+    Chroma 
