@@ -3,3 +3,52 @@ RAG:
 
     We can build data pipeline that transforms unstructured documents in a searchable knowledge 
     and Retrives right data and gives it to an LLM to generate a Grounded ans
+
+LLM:Large Language Model
+
+GPT:Generative pre-trained Transformer
+
+
+Architecture of RAG:
+
+    Document (PDF,TXT,DOCX)
+            |
+    Document Loader
+            |
+        Chunking
+            |
+        Embeddings
+            |
+    Vector Database
+            |
+        User Query
+            |
+    Query Embedding
+            |
+        Retrivel
+            |
+    Relevant Chunks
+            |
+    Prompt + Context
+            |
+            LLM
+            |
+        Answer
+            |
+        Source
+
+
+
+What if we use LLM for information 
+
+    User-LLM-Answer
+    NO Specific Domain
+    Major Limitation in ans
+
+
+            V/S 
+
+
+What if we use LLM with RAG for information
+
+    User--Search knowledge Base--Relevant Document--
