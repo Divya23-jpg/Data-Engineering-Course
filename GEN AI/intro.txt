@@ -85,3 +85,10 @@ Model we use:
 
 Write in CMD:
     1. Ollama pull LLM_name(via LL_website)
+
+create a Virtual environment:python -m venv myvenv
+myvenv/Scripts/active
+
+
+%pip install langchain langchain-community langchain-chroma pypdf sentence-tranformers
+%pip install langchain-core langchain-ollama
