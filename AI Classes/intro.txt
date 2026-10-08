@@ -4,6 +4,7 @@ RAG:
     We can build data pipeline that transforms unstructured documents in a searchable knowledge 
     and Retrives right data and gives it to an LLM to generate a Grounded ans
 
+    RAG is a DataPipeline
 LLM:Large Language Model
 
 GPT:Generative pre-trained Transformer
@@ -52,3 +53,8 @@ What if we use LLM for information
 What if we use LLM with RAG for information
 
     User--Search knowledge Base--Relevant Document--
+
+
+
+
+Fine Tuning
