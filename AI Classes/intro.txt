@@ -1,0 +1,5 @@
+RAG:
+    Retrivel Augumented Generation
+
+    We can build data pipeline that transforms unstructured documents in a searchable knowledge 
+    and Retrives right data and gives it to an LLM to generate a Grounded ans
