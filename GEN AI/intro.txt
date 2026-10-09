@@ -92,3 +92,18 @@ myvenv/Scripts/active
 
 %pip install langchain langchain-community langchain-chroma pypdf sentence-tranformers
 %pip install langchain-core langchain-ollama
+
+
+
+PROMT 
+from langchain_core.prompts import ChatPromptTemplate
+prompt = ChatPromptTemplate.from_template("""
+You are a document
+question-answering assistant.
+Answer the question using Only the provided context.
+If the answer is not present in the context,
+say : "I Could not find this info in documents.
+Context : {context}
+question : {question}
+answer :
+""")
